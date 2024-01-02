@@ -6,6 +6,7 @@ namespace SistemaGestaoVendas.Controllers
     {
         public IActionResult Index()
         {
+
             return View();
         }
     }
