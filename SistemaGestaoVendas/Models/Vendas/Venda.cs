@@ -1,6 +1,6 @@
 ﻿namespace SistemaGestaoVendas.Models.Vendas
 {
-    public class Vendas
+    public class Venda
     {
         public int Id { get; set; }
     }
