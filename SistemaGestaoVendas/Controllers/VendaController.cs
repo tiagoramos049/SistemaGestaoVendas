@@ -2,7 +2,7 @@
 
 namespace SistemaGestaoVendas.Controllers
 {
-    public class VendasController : Controller
+    public class VendaController : Controller
     {
         public IActionResult Index()
         {
