@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/SistemaGestaoVendas.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/css/ui.jqgrid.min.css" />
 </head>
 <body>
     <header>
@@ -31,6 +33,18 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Venda" asp-action="Index">Vendas</a>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark dropdown-toggle" href="#" id="relatoriosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Relatórios
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="relatoriosDropdown">
+                                <a class="dropdown-item" asp-area="" asp-controller="Relatorios" asp-action="Item1">Item 1</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Relatorios" asp-action="Item2">Item 2</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Relatorios" asp-action="Item3">Item 3</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Relatorios" asp-action="Item4">Item 4</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Relatorios" asp-action="Item5">Item 5</a>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -47,7 +61,10 @@
             &copy; 2024 - SistemaGestaoVendas - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/jquery.jqgrid.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/plugins/ui.multiselect.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)

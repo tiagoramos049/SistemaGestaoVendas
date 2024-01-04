@@ -1,25 +1,64 @@
-﻿@using SistemaGestaoVendas.Models.Produtos
-@model IEnumerable<Produto>
+﻿<div id="mensagem"></div>
 
-<table class="table" id="grid">
-    <caption>List of users</caption>
-    <thead>
-        <tr>
-            <th>Nome</th>
-            <th>Descrição</th>
-            <th>Preço Unitátio</th>
-        </tr>
-    </thead>
-    @foreach (var item in Model)
-    {
-        <tbody>
-            <tr>
-                <td>@item.Id</td>
-                <td>@item.Descricao</td>
-                <td>@item.Preco_Unitario</td>
-            </tr>
-        </tbody>
-    }
-</table> 
-<div id="pager"></div>
+<form asp-action="Index">
+    <div class="container">
+        <div class="row">
+            <span>Cadastrar novo Produto</span>
+            <hr />
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="Nome">Nome</label>
+                    <input type="text" class="form-control" name="Nome" placeholder="Nome">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="Descricao">Descricao</label>
+                    <input type="text" class="form-control" name="Descricao" placeholder="Descricao">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="Preco_Unitario">Preco_Unitario</label>
+                    <input type="text" class="form-control" name="Preco_Unitario" placeholder="Preco_Unitario">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="Quantidade_Estoque">Quantidade_Estoque</label>
+                    <input type="text" class="form-control" name="Quantidade_Estoque" placeholder="Quantidade_Estoque">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="Unidade_Medida">Unidade_Medida</label>
+                    <input type="text" class="form-control" name="Unidade_Medida" placeholder="Unidade_Medida">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="Link_Foto">Link_Foto</label>
+                    <input type="text" class="form-control" name="Link_Foto" placeholder="Link_Foto">
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-12">
+                <button type="submit" class="btn btn-primary">Salvar</button>
+            </div>
+        </div>
+    </div>
+</form>
 
+<br />
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <table id="jqGrid"></table>
+            <div id="jqGridPager"></div>
+        </div>
+    </div>
+</div>

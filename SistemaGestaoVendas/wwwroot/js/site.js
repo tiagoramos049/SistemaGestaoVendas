@@ -1,22 +1,53 @@
-﻿<script>
-    $(document).ready(function () {
-        $("#grid").jqGrid({
-            url: '/Produto/GetProdutos', // URL para buscar dados do backend
-            datatype: 'json',
-            mtype: 'GET',
-            colNames: ['Id', 'Nome', 'Descrição', 'Preço Unitário'],
-            colModel: [
-                { name: 'Id', key: true, hidden: true },
-                { name: 'Nome', width: 100 },
-                { name: 'Descricao', width: 200 },
-                { name: 'Preco_Unitario', width: 80 }
-            ],
-            pager: jQuery('#pager'),
-            rowNum: 10,
-            rowList: [5, 10, 20, 50],
-            viewrecords: true,
-            width: '100%',
-            height: '100%'
+﻿$(document).ready(function () {
+    var maxRowNum = 100;
+
+    var rowList = [];
+    for (var i = 10; i <= maxRowNum; i += 10) {
+        rowList.push(i);
+    }
+
+    $("#jqGrid").jqGrid({
+        url: '/Produto/GridData',
+        datatype: 'json',
+        mtype: 'GET',
+        colNames: ['Nome', 'Descrição', 'Preço Unitário'],
+        colModel: [
+            { name: 'nome', index: 'nome', width: 300 },
+            { name: 'descricao', index: 'descricao', width: 300 },
+            { name: 'preco_unitario', index: 'preco_unitario', width: 100 }
+        ],
+        pager: jQuery('#jqGridPager'),
+        rowNum: 10,
+        rowList: rowList,
+        caption: 'Lista de Produtos',
+        pgbuttons: true,
+        pginput: true,
+        pgtext: "Página {0} de {1}",
+        loadonce: false, 
+        jsonReader: { repeatitems: false }, 
+        serializeGridData: function (postData) {
+            return { page: postData.page, rows: postData.rows, sort: postData.sort, order: postData.order };
+        }
+    });
+});
+
+$(document).ready(function () {
+    $('#produtoForm').submit(function (e) {
+        e.preventDefault();
+
+        var formData = $(this).serialize();
+
+        $.ajax({
+            url: $(this).attr('action'),
+            type: $(this).attr('method'),
+            data: formData,
+            success: function (response) {
+                $('#mensagem').html('<div class="alert alert-success">Produto salvo com sucesso!</div>');
+            },
+            error: function (error) {
+                $('#mensagem').html('<div class="alert alert-danger">Erro ao salvar o produto.</div>');
+            }
         });
     });
-</script>
+});
+

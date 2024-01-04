@@ -39,3 +39,5 @@ C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8
 C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.sourcelink.json
 C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.csproj.CopyComplete
 C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\libman.json

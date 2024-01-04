@@ -33,13 +33,13 @@ namespace SistemaGestaoVendas.Repository
                 return dbConnection.QueryFirstOrDefault<Produto>("SELECT * FROM Produto WHERE id = @Id", new { Id = id });
             }
         }
-
+        
         public void Insert(Produto produto)
         {
             using (IDbConnection dbConnection = _dao.Connection)
             {
                 dbConnection.Open();
-                dbConnection.Execute("INSERT INTO Produto (nome, cpf_cnpj, email, senha) VALUES (@Nome, @CPF_CNPJ, @Email, @Senha)", produto);
+                dbConnection.Execute("INSERT INTO Produto (nome, descricao, preco_unitario, quantidade_estoque, unidade_medida, link_foto) VALUES (@nome, @descricao, @preco_unitario, @quantidade_estoque, @unidade_medida, @link_foto)", produto);
             }
         }
 
@@ -48,7 +48,7 @@ namespace SistemaGestaoVendas.Repository
             using (IDbConnection dbConnection = _dao.Connection)
             {
                 dbConnection.Open();
-                dbConnection.Execute("UPDATE Produto SET nome = @Nome, cpf_cnpj = @CPF_CNPJ, email = @Email, senha = @Senha WHERE id = @Id", produto);
+                dbConnection.Execute("UPDATE Produto SET nome = @Nome, descricao = @descricao, preco_unitario = @preco_unitario, unidade_medida = @unidade_medida, link_foto = @link_foto WHERE id = @Id", produto);
             }
         }
 
