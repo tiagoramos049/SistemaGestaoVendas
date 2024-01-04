@@ -1,0 +1,25 @@
+﻿@using SistemaGestaoVendas.Models.Produtos
+@model IEnumerable<Produto>
+
+<table class="table" id="grid">
+    <caption>List of users</caption>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Preço Unitátio</th>
+        </tr>
+    </thead>
+    @foreach (var item in Model)
+    {
+        <tbody>
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Descricao</td>
+                <td>@item.Preco_Unitario</td>
+            </tr>
+        </tbody>
+    }
+</table> 
+<div id="pager"></div>
+

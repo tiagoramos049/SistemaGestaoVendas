@@ -28,3 +28,14 @@ C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8
 C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.pdb
 C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.genruntimeconfig.cache
 C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\ref\SistemaGestaoVendas.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\Dapper.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.csproj.AssemblyReference.cache
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.sourcelink.json
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.csproj.CopyComplete
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\Newtonsoft.Json.dll
