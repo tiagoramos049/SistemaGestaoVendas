@@ -40,8 +40,7 @@ namespace SistemaGestaoVendas.Repository
                 dbConnection.Execute("INSERT INTO Cliente (nome, cpf_cnpj, email, senha) VALUES (@Nome, @CPF_CNPJ, @Email, @Senha)", cliente);
             }
         }
-
-        public void Update(Cliente cliente)
+        public async Task Update(Task<Cliente> cliente)
         {
             using (IDbConnection dbConnection = _dao.Connection)
             {
@@ -49,7 +48,7 @@ namespace SistemaGestaoVendas.Repository
                 dbConnection.Execute("UPDATE Cliente SET nome = @Nome, cpf_cnpj = @CPF_CNPJ, email = @Email, senha = @Senha WHERE id = @Id", cliente);
             }
         }
-
+        
         public void Delete(int id)
         {
             using (IDbConnection dbConnection = _dao.Connection)
@@ -58,5 +57,7 @@ namespace SistemaGestaoVendas.Repository
                 dbConnection.Execute("DELETE FROM Cliente WHERE Id = @Id", new { Id = id });
             }
         }
+
+        
     }
 }

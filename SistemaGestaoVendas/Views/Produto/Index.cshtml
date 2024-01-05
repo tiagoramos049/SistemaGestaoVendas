@@ -1,4 +1,24 @@
-﻿<div id="mensagem"></div>
+﻿<div class="modal" id="editarModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Editar Registro</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Adicione os campos do formulário de edição aqui -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary" onclick="salvarEdicao()">Salvar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="mensagem"></div>
 
 <form asp-action="Index">
     <div class="container">
@@ -13,34 +33,34 @@
             </div>
             <div class="col-md-4">
                 <div class="form-group">
-                    <label for="Descricao">Descricao</label>
-                    <input type="text" class="form-control" name="Descricao" placeholder="Descricao">
+                    <label for="Descricao">Descrição</label>
+                    <input type="text" class="form-control" name="Descricao" placeholder="Descrição">
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="form-group">
-                    <label for="Preco_Unitario">Preco_Unitario</label>
-                    <input type="text" class="form-control" name="Preco_Unitario" placeholder="Preco_Unitario">
+                    <label for="Preco_Unitario">Preço Unitário</label>
+                    <input type="text" class="form-control" name="Preco_Unitario" placeholder="Preço Unitário">
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4">
                 <div class="form-group">
-                    <label for="Quantidade_Estoque">Quantidade_Estoque</label>
-                    <input type="text" class="form-control" name="Quantidade_Estoque" placeholder="Quantidade_Estoque">
+                    <label for="Quantidade_Estoque">Quantidade Estoque</label>
+                    <input type="text" class="form-control" name="Quantidade_Estoque" placeholder="Quantidade Estoque">
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="form-group">
-                    <label for="Unidade_Medida">Unidade_Medida</label>
-                    <input type="text" class="form-control" name="Unidade_Medida" placeholder="Unidade_Medida">
+                    <label for="Unidade_Medida">Unidade Medida</label>
+                    <input type="text" class="form-control" name="Unidade_Medida" placeholder="Unidade Medida">
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="form-group">
-                    <label for="Link_Foto">Link_Foto</label>
-                    <input type="text" class="form-control" name="Link_Foto" placeholder="Link_Foto">
+                    <label for="Link_Foto">Link Foto</label>
+                    <input type="text" class="form-control" name="Link_Foto" placeholder="Link Foto">
                 </div>
             </div>
         </div>

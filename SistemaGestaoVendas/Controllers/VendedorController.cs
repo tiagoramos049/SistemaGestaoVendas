@@ -2,6 +2,7 @@
 using SistemaGestaoVendas.Interfaces;
 using SistemaGestaoVendas.Models.Clientes;
 using SistemaGestaoVendas.Models.Vendedores;
+using SistemaGestaoVendas.Repository;
 
 namespace SistemaGestaoVendas.Controllers
 {
@@ -62,6 +63,36 @@ namespace SistemaGestaoVendas.Controllers
                 records = totalRecords,
                 rows = jsonData
             });
+        }
+
+        [HttpPost]
+        public IActionResult Update(int id)
+        {
+            try
+            {
+                var produto = _vendedorRepository.GetById(id);
+                _vendedorRepository.Update(produto);
+
+                return RedirectToAction("Index"); // Substitua "Index" pela sua ação desejada
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = "Erro ao atualizar o registro: " + ex.Message });
+            }
+        }
+
+        [HttpPost]
+        public IActionResult Delete(int id)
+        {
+            try
+            {
+                _vendedorRepository.Delete(id);
+                return RedirectToAction("Index"); // Substitua "Index" pela sua ação desejada
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = true, message = "Erro ao Deletar o registro: " + ex.Message });
+            }
         }
 
         private IEnumerable<Vendedor> SortProdutos(IEnumerable<Vendedor> vendedores, string sortBy, string sortOrder)

@@ -25,7 +25,7 @@ namespace SistemaGestaoVendas.Repository
             }
         }
 
-        public async Task<Produto> GetById(int id)
+        public Produto GetById(int id)
         {
             using (IDbConnection dbConnection = _dao.Connection)
             {

@@ -25,7 +25,7 @@
             },
             { name: 'nome', index: 'nome', width: 250 },
             { name: 'cpf_cnpj', index: 'cpf_cnpj', width: 250 },
-            { name: 'email', index: 'email', width: 100 },
+            { name: 'email', index: 'email', width: 200 },
             {
                 name: 'senha',
                 index: 'senha',
@@ -51,13 +51,34 @@
 });
 
 function editarRegistro(id) {
-    // Implement your logic for editing the record with the given id
     console.log('Editar Registro: ' + id);
+    $.ajax({
+        url: '/Cliente/Update', 
+        type: 'POST',
+        data: { id: id }, 
+        success: function (response) {
+            console.log('Registro atualizado com sucesso.');
+        },
+        error: function (error) {
+            console.error('Erro ao atualizar registro: ' + error.responseText);
+        }
+    });
 }
 
 function excluirRegistro(id) {
-    // Implement your logic for deleting the record with the given id
     console.log('Excluir Registro: ' + id);
+
+    $.ajax({
+        url: 'Cliente/Delete',
+        type: 'POST',
+        data: { id: id },
+        success: function (response) {
+            console.log('Registro excluído com sucesso.');
+        },
+        error: function (error) {
+            console.error('Erro ao excluir registro: ' + error.responseText);
+        }
+    });
 }
 
 $(document).ready(function () {

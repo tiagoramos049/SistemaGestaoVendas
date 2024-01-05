@@ -83,5 +83,37 @@ namespace SistemaGestaoVendas.Controllers
 
             return produtos;
         }
+        
+        [HttpPost]
+        public IActionResult Update(int id)
+        {
+            try
+            {
+                var produto = _produtoRepository.GetById(id);
+                _produtoRepository.Update(produto);
+
+                return RedirectToAction("Index"); // Substitua "Index" pela sua ação desejada
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = "Erro ao atualizar o registro: " + ex.Message });
+            }
+        }
+
+        [HttpPost]
+        public IActionResult Delete(int id)
+        {
+            try
+            {
+                _produtoRepository.Delete(id);
+
+                return RedirectToAction("Index"); // Substitua "Index" pela sua ação desejada
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = true, message = "Erro ao Deletar o registro: " + ex.Message });
+            }
+            
+        }
     }
 }

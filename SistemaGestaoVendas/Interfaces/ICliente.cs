@@ -9,7 +9,8 @@ namespace SistemaGestaoVendas.Interfaces
         public IEnumerable<Cliente> GetAll();
         public Task<Cliente> GetById(int id);
         public void Insert(Cliente cliente);
-        public void Update(Cliente cliente);
+        public Task Update(Task<Cliente> produto);
         public void Delete(int id);
+        
     }
 }

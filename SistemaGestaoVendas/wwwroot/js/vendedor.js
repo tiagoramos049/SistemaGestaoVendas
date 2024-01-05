@@ -50,13 +50,33 @@
 });
 
 function editarRegistro(id) {
-    // Implement your logic for editing the record with the given id
     console.log('Editar Registro: ' + id);
+    $.ajax({
+        url: '/Vendedor/Update',
+        type: 'POST',
+        data: { id: id }, 
+        success: function (response) {
+            console.log('Registro atualizado com sucesso.');
+        },
+        error: function (error) {
+            console.error('Erro ao atualizar registro: ' + error.responseText);
+        }
+    });
 }
 
 function excluirRegistro(id) {
-    // Implement your logic for deleting the record with the given id
     console.log('Excluir Registro: ' + id);
+    $.ajax({
+        url: '/Vendedor/Delete',
+        type: 'POST',
+        data: { id: id }, 
+        success: function (response) {
+            console.log('Registro excluído com sucesso.');
+        },
+        error: function (error) {
+            console.error('Erro ao excluir registro: ' + error.responseText);
+        }
+    });
 }
 
 $(document).ready(function () {

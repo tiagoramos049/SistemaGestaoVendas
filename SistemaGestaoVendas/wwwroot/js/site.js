@@ -45,6 +45,56 @@
     });
 });
 
+function editarRegistro(id) {
+    console.log('Editar Registro: ' + id);
+
+    $('#editarModal').modal('show');
+    $.ajax({
+        url: '/Produto/GetDataForEdit',
+        type: 'GET',
+        data: { id: id },
+        success: function (data) {
+            $('#campo1').val(data.campo1);
+            $('#campo2').val(data.campo2);
+        },
+        error: function (error) {
+            console.error('Erro ao obter dados para edição: ' + error.responseText);
+        }
+    });
+}
+
+function salvarEdicao() {
+    console.log('Salvar Edição');
+    $.ajax({
+        url: '/Produto/Update',
+        type: 'POST',
+        data: {  },
+        success: function (response) {
+            console.log('Registro atualizado com sucesso.');
+            $('#editarModal').modal('hide');
+        },
+        error: function (error) {
+            console.error('Erro ao atualizar registro: ' + error.responseText);
+        }
+    });
+}
+
+function excluirRegistro(id) {
+    console.log('Excluir Registro: ' + id);
+
+    $.ajax({
+        url: '/Produto/Delete', 
+        type: 'POST',
+        data: { id: id }, 
+        success: function (response) {
+            console.log('Registro excluído com sucesso.');
+        },
+        error: function (error) {
+            console.error('Erro ao excluir registro: ' + error.responseText);
+        }
+    });
+}
+
 $(document).ready(function () {
     $('#produtoForm').submit(function (e) {
         e.preventDefault();

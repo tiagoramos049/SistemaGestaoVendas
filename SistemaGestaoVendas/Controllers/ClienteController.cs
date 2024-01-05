@@ -79,6 +79,37 @@ namespace SistemaGestaoVendas.Controllers
 
             return clientes;
         }
+        [HttpPost]
+        public async Task<IActionResult> Update(int id)
+        {
+            try
+            {
+                var produto = _clienteRepository.GetById(id);
+                await _clienteRepository.Update(produto);
+
+                return RedirectToAction("Index"); // Substitua "Index" pela sua ação desejada
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = "Erro ao atualizar o registro: " + ex.Message });
+            }
+        }
+
+        [HttpPost]
+        public IActionResult Delete(int id)
+        {
+            try
+            {
+                _clienteRepository.Delete(id);
+
+                return RedirectToAction("Index"); // Substitua "Index" pela sua ação desejada
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = true, message = "Erro ao Deletar o registro: " + ex.Message });
+            }
+
+        }
 
     }
 
