@@ -13,8 +13,16 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\SQi\\source\\repos\\SistemaGestaoVendas\\SistemaGestaoVendas\\wwwroot\\js\\cliente.js",
+      "PackagePath": "staticwebassets\\js\\cliente.js"
+    },
+    {
       "Id": "C:\\Users\\SQi\\source\\repos\\SistemaGestaoVendas\\SistemaGestaoVendas\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\SQi\\source\\repos\\SistemaGestaoVendas\\SistemaGestaoVendas\\wwwroot\\js\\vendedor.js",
+      "PackagePath": "staticwebassets\\js\\vendedor.js"
     },
     {
       "Id": "C:\\Users\\SQi\\source\\repos\\SistemaGestaoVendas\\SistemaGestaoVendas\\wwwroot\\lib\\bootstrap\\LICENSE",

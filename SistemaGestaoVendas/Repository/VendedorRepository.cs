@@ -37,7 +37,7 @@ namespace SistemaGestaoVendas.Repository
             using (IDbConnection dbConnection = _dao.Connection)
             {
                 dbConnection.Open();
-                dbConnection.Execute("INSERT INTO Vendedor (nome, cpf_cnpj, email, senha) VALUES (@Nome, @CPF_CNPJ, @Email, @Senha)", vendedor);
+                dbConnection.Execute("INSERT INTO Vendedor (nome, email, senha) VALUES (@Nome, @Email, @Senha)", vendedor);
             }
         }
 
@@ -46,7 +46,7 @@ namespace SistemaGestaoVendas.Repository
             using (IDbConnection dbConnection = _dao.Connection)
             {
                 dbConnection.Open();
-                dbConnection.Execute("UPDATE Produto SET nome = @Nome, cpf_cnpj = @CPF_CNPJ, email = @Email, senha = @Senha WHERE id = @Id", vendedor);
+                dbConnection.Execute("UPDATE Vendedor SET nome = @Nome, email = @Email, senha = @Senha WHERE id = @Id", vendedor);
             }
         }
 
@@ -55,7 +55,7 @@ namespace SistemaGestaoVendas.Repository
             using (IDbConnection dbConnection = _dao.Connection)
             {
                 dbConnection.Open();
-                dbConnection.Execute("DELETE FROM Produto WHERE Id = @Id", new { Id = id });
+                dbConnection.Execute("DELETE FROM Vendedor WHERE Id = @Id", new { Id = id });
             }
         }
     }

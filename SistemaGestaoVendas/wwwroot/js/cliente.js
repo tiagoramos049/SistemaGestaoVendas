@@ -6,11 +6,11 @@
         rowList.push(i);
     }
 
-    $("#jqGrid").jqGrid({
-        url: '/Produto/GridData',
+    $("#jqGridCliente").jqGrid({
+        url: '/Cliente/GridData',
         datatype: 'json',
         mtype: 'GET',
-        colNames: ['Ações','Nome', 'Descrição', 'Preço Unitário','quantidade_estoque','unidade_medida','link_foto'],
+        colNames: ['Ações','Nome', 'Cpf_Cnpj', 'Email', 'Senha'],
         colModel: [
             {
                 name: 'acoes',
@@ -24,29 +24,44 @@
                 }
             },
             { name: 'nome', index: 'nome', width: 250 },
-            { name: 'descricao', index: 'descricao', width: 250 },
-            { name: 'preco_unitario', index: 'preco_unitario', width: 100 },
-            { name: 'quantidade_estoque', index: 'quantidade_estoque', width: 100 },
-            { name: 'unidade_medida', index: 'unidade_medida', width: 150 },
-            { name: 'link_foto', index: 'link_foto', width: 240 },
+            { name: 'cpf_cnpj', index: 'cpf_cnpj', width: 250 },
+            { name: 'email', index: 'email', width: 100 },
+            {
+                name: 'senha',
+                index: 'senha',
+                width: 300,
+                formatter: function (cellvalue, options, rowObject) {
+                    return '******';
+                }
+            },
         ],
         pager: jQuery('#jqGridPager'),
         rowNum: 10,
         rowList: rowList,
-        caption: 'Lista de Produtos',
+        caption: 'Lista de Clientes',
         pgbuttons: true,
         pginput: true,
         pgtext: "Página {0} de {1}",
-        loadonce: false, 
-        jsonReader: { repeatitems: false }, 
+        loadonce: false,
+        jsonReader: { repeatitems: false },
         serializeGridData: function (postData) {
             return { page: postData.page, rows: postData.rows, sort: postData.sort, order: postData.order };
         }
     });
 });
 
+function editarRegistro(id) {
+    // Implement your logic for editing the record with the given id
+    console.log('Editar Registro: ' + id);
+}
+
+function excluirRegistro(id) {
+    // Implement your logic for deleting the record with the given id
+    console.log('Excluir Registro: ' + id);
+}
+
 $(document).ready(function () {
-    $('#produtoForm').submit(function (e) {
+    $('#clienteForm').submit(function (e) {
         e.preventDefault();
 
         var formData = $(this).serialize();
@@ -64,4 +79,3 @@ $(document).ready(function () {
         });
     });
 });
-

@@ -54,7 +54,11 @@ namespace SistemaGestaoVendas.Controllers
                 id = p.Id,
                 nome = p.Nome,
                 descricao = p.Descricao,
-                preco_unitario = (decimal)p.Preco_Unitario
+                preco_unitario = (decimal)p.Preco_Unitario,
+                quantidade_estoque = (decimal)p.Quantidade_Estoque,
+                unidade_medida = p.Unidade_Medida,
+                link_foto = p.Link_Foto
+
             });
 
             return Json(new

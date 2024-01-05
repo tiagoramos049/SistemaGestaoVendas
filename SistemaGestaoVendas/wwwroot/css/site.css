@@ -18,5 +18,13 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: slateblue;
 }
+
+span.icon-edit,
+span.icon-delete {
+    font-size: 20px; /* Adjust the size as needed */
+    margin-right: 5px; /* Add some spacing between icons if needed */
+}
+

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "K1zc2UAErJxGScOUN0jXR8EhygRX76/1DNWFWW5WvE0=",
+  "Hash": "lGfLzKL/1v1uPxm+toSv+q7MklJns0gEOb8W2PJ3ZaE=",
   "Source": "SistemaGestaoVendas",
   "BasePath": "_content/SistemaGestaoVendas",
   "Mode": "Default",
@@ -93,6 +93,25 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\SQi\\source\\repos\\SistemaGestaoVendas\\SistemaGestaoVendas\\wwwroot\\js\\cliente.js",
+      "SourceId": "SistemaGestaoVendas",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SQi\\source\\repos\\SistemaGestaoVendas\\SistemaGestaoVendas\\wwwroot\\",
+      "BasePath": "_content/SistemaGestaoVendas",
+      "RelativePath": "js/cliente.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\cliente.js"
+    },
+    {
       "Identity": "C:\\Users\\SQi\\source\\repos\\SistemaGestaoVendas\\SistemaGestaoVendas\\wwwroot\\js\\site.js",
       "SourceId": "SistemaGestaoVendas",
       "SourceType": "Discovered",
@@ -110,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\SQi\\source\\repos\\SistemaGestaoVendas\\SistemaGestaoVendas\\wwwroot\\js\\vendedor.js",
+      "SourceId": "SistemaGestaoVendas",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SQi\\source\\repos\\SistemaGestaoVendas\\SistemaGestaoVendas\\wwwroot\\",
+      "BasePath": "_content/SistemaGestaoVendas",
+      "RelativePath": "js/vendedor.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\vendedor.js"
     },
     {
       "Identity": "C:\\Users\\SQi\\source\\repos\\SistemaGestaoVendas\\SistemaGestaoVendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
