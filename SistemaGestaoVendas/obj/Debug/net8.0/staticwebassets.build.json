@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lGfLzKL/1v1uPxm+toSv+q7MklJns0gEOb8W2PJ3ZaE=",
+  "Hash": "enk5sgWSVqIPItB7AJ7D7VF5LxPr7AY1xX933ytyefk=",
   "Source": "SistemaGestaoVendas",
   "BasePath": "_content/SistemaGestaoVendas",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\cliente.js"
+    },
+    {
+      "Identity": "C:\\Users\\SQi\\source\\repos\\SistemaGestaoVendas\\SistemaGestaoVendas\\wwwroot\\js\\produto.js",
+      "SourceId": "SistemaGestaoVendas",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SQi\\source\\repos\\SistemaGestaoVendas\\SistemaGestaoVendas\\wwwroot\\",
+      "BasePath": "_content/SistemaGestaoVendas",
+      "RelativePath": "js/produto.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\produto.js"
     },
     {
       "Identity": "C:\\Users\\SQi\\source\\repos\\SistemaGestaoVendas\\SistemaGestaoVendas\\wwwroot\\js\\site.js",

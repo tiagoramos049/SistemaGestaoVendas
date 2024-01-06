@@ -27,7 +27,6 @@ namespace SistemaGestaoVendas.Controllers
             {
                 _produtoRepository.Insert(produto);
 
-                // Retorna o produto recém-inserido junto com o sucesso
                 return RedirectToAction();
             }
             catch (Exception ex)
@@ -39,14 +38,11 @@ namespace SistemaGestaoVendas.Controllers
         {
             var produtos = _produtoRepository.GetAll();
 
-            // Lógica para ordenação
             produtos = SortProdutos(produtos, sidx, sord);
 
-            // Lógica para paginação
             var totalRecords = produtos.Count();
             var totalPages = (int)Math.Ceiling((double)totalRecords / rows);
 
-            // Aplica a paginação
             produtos = produtos.Skip((page - 1) * rows).Take(rows);
 
             var jsonData = produtos.Select(p => new
@@ -72,27 +68,59 @@ namespace SistemaGestaoVendas.Controllers
 
         private IEnumerable<Produto> SortProdutos(IEnumerable<Produto> produtos, string sortBy, string sortOrder)
         {
-            // Lógica para ordenação
             switch (sortBy)
             {
                 case "nome":
                     produtos = sortOrder == "asc" ? produtos.OrderBy(p => p.Nome) : produtos.OrderByDescending(p => p.Nome);
                     break;
-                    // Adicione mais casos conforme necessário para outras colunas
             }
 
             return produtos;
         }
         
-        [HttpPost]
-        public IActionResult Update(int id)
+        [HttpGet]
+        public IActionResult GetDataForEdit(int id)
         {
             try
             {
                 var produto = _produtoRepository.GetById(id);
+
+                if (produto == null)
+                {
+                    return Json(new { success = false, message = "Produto não encontrado." });
+                }
+
+                return Json(new { success = true, campo1 = produto.Nome, campo2 = produto.Descricao, 
+                               campo3 = produto.Preco_Unitario, campo4 = produto.Quantidade_Estoque, 
+                                     campo5 = produto.Unidade_Medida, campo6 = produto.Link_Foto });
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = "Erro ao obter dados para edição: " + ex.Message });
+            }
+        }
+
+        [HttpPost]
+        public IActionResult Update(int id, string campo1, string campo2, decimal campo3, int campo4, string campo5, string campo6)
+        {
+            try
+            {
+                var produto = _produtoRepository.GetById(id);
+
+                if (produto == null)
+                {
+                    return Json(new { success = false, message = "Produto não encontrado." });
+                }
+                produto.Nome = campo1;
+                produto.Descricao = campo2;
+                produto.Preco_Unitario = campo3;
+                produto.Quantidade_Estoque = campo4;
+                produto.Unidade_Medida = campo5;
+                produto.Link_Foto = campo6;
+                
                 _produtoRepository.Update(produto);
 
-                return RedirectToAction("Index"); // Substitua "Index" pela sua ação desejada
+                return Json(new { success = true, message = "Registro atualizado com sucesso." });
             }
             catch (Exception ex)
             {
@@ -107,7 +135,7 @@ namespace SistemaGestaoVendas.Controllers
             {
                 _produtoRepository.Delete(id);
 
-                return RedirectToAction("Index"); // Substitua "Index" pela sua ação desejada
+                return RedirectToAction("Index");
             }
             catch (Exception ex)
             {

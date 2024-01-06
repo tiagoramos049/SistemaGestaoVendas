@@ -1,25 +1,45 @@
 ﻿<div class="modal" id="editarModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-sm" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Editar Registro</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
             </div>
             <div class="modal-body">
-                <!-- Adicione os campos do formulário de edição aqui -->
+                <form id="formularioEdicao">
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" name="nome">
+                    </div>
+                    <div class="mb-3">
+                        <label for="descricao" class="form-label">Descrição</label>
+                        <textarea class="form-control" id="descricao" name="descricao"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="preco_unitario" class="form-label">Preco Unitario</label>
+                        <textarea class="form-control" id="preco_unitario" name="preco_unitario"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="quantidade_estoque" class="form-label">Quantidade Estoque</label>
+                        <textarea class="form-control" id="quantidade_estoque" name="quantidade_estoque"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="unidade_medida" class="form-label">Unidade Medida</label>
+                        <textarea class="form-control" id="unidade_medida" name="unidade_medida"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="link_foto" class="form-label">Link foto</label>
+                        <textarea class="form-control" id="link_foto" name="link_foto"></textarea>
+                    </div>
+                </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-secondary" onclick="fecharModal()">Fechar</button>
                 <button type="button" class="btn btn-primary" onclick="salvarEdicao()">Salvar</button>
             </div>
         </div>
     </div>
 </div>
-
 <div id="mensagem"></div>
-
 <form asp-action="Index">
     <div class="container">
         <div class="row">
@@ -78,8 +98,12 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <table id="jqGrid"></table>
+            <table id="jqGridProduto"></table>
             <div id="jqGridPager"></div>
         </div>
     </div>
 </div>
+
+@section produtorender {
+    <script src="~/js/produto.js"></script>
+}

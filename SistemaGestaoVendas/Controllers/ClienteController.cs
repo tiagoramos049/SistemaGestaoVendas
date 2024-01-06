@@ -79,15 +79,55 @@ namespace SistemaGestaoVendas.Controllers
 
             return clientes;
         }
-        [HttpPost]
-        public async Task<IActionResult> Update(int id)
+
+        [HttpGet]
+        public IActionResult GetDataForEdit(int id)
         {
             try
             {
-                var produto = _clienteRepository.GetById(id);
-                await _clienteRepository.Update(produto);
+                var cliente = _clienteRepository.GetById(id);
 
-                return RedirectToAction("Index"); // Substitua "Index" pela sua ação desejada
+                if (cliente == null)
+                {
+                    return Json(new { success = false, message = "Produto não encontrado." });
+                }
+
+                return Json(new
+                {
+                    success = true,
+                    campo1 = cliente.Nome,
+                    campo2 = cliente.Cpf_Cnpj,
+                    campo3 = cliente.Email,
+                    campo4 = cliente.Senha,
+                    
+                });
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = "Erro ao obter dados para edição: " + ex.Message });
+            }
+        }
+
+        [HttpPost]
+        public IActionResult Update(int id, string campo1, string campo2, string campo3, string campo4)
+        {
+            try
+            {
+                var cliente = _clienteRepository.GetById(id);
+
+                if (cliente == null) 
+                {
+                    return Json(new { success = false, message = "Cliente não encontrado." });
+                }
+
+                cliente.Nome = campo1;
+                cliente.Cpf_Cnpj = campo2;
+                cliente.Email = campo3;
+                cliente.Senha = campo4;
+                
+                _clienteRepository.Update(cliente);
+
+                return Json(new { success = true, message = "Registro atualizado com sucesso." });
             }
             catch (Exception ex)
             {

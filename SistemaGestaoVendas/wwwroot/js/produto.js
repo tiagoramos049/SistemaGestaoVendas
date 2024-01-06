@@ -6,11 +6,11 @@
         rowList.push(i);
     }
 
-    $("#jqGridCliente").jqGrid({
-        url: '/Cliente/GridData',
+    $("#jqGridProduto").jqGrid({
+        url: '/Produto/GridData',
         datatype: 'json',
         mtype: 'GET',
-        colNames: ['Ações','Nome', 'Cpf_Cnpj', 'Email', 'Senha'],
+        colNames: ['Ações', 'Nome', 'Descrição', 'Preço Unitário', 'quantidade_estoque', 'unidade_medida', 'link_foto'],
         colModel: [
             {
                 name: 'acoes',
@@ -24,21 +24,17 @@
                 }
             },
             { name: 'nome', index: 'nome', width: 250 },
-            { name: 'cpf_cnpj', index: 'cpf_cnpj', width: 250 },
-            { name: 'email', index: 'email', width: 200 },
-            {
-                name: 'senha',
-                index: 'senha',
-                width: 300,
-                formatter: function (cellvalue, options, rowObject) {
-                    return '******';
-                }
-            },
+            { name: 'descricao', index: 'descricao', width: 250 },
+            { name: 'preco_unitario', index: 'preco_unitario', width: 100 },
+            { name: 'quantidade_estoque', index: 'quantidade_estoque', width: 100 },
+            { name: 'unidade_medida', index: 'unidade_medida', width: 150 },
+            { name: 'link_foto', index: 'link_foto', width: 240 },
         ],
+
         pager: jQuery('#jqGridPager'),
         rowNum: 10,
         rowList: rowList,
-        caption: 'Lista de Clientes',
+        caption: 'Lista de Produtos',
         pgbuttons: true,
         pginput: true,
         pgtext: "Página {0} de {1}",
@@ -47,26 +43,29 @@
         serializeGridData: function (postData) {
             return { page: postData.page, rows: postData.rows, sort: postData.sort, order: postData.order };
         }
+
     });
 });
 
-var clienteId;
+var produtoId;
 
 function editarRegistro(id) {
     $('#editarModal').modal('show');
-    clienteId = id;
+    produtoId = id;
     $.ajax({
-        url: '/Cliente/GetDataForEdit',
+        url: '/Produto/GetDataForEdit',
         type: 'GET',
         data: { id: id },
         success: function (data) {
             if (data.success) {
                 $('#nome').val(data.campo1);
-                $('#cpf_cnpj').val(data.campo2);
-                $('#email').val(data.campo3);
-                $('#senha').val(data.campo4);
+                $('#descricao').val(data.campo2);
+                $('#preco_unitario').val(data.campo3);
+                $('#quantidade_estoque').val(data.campo4);
+                $('#unidade_medida').val(data.campo5);
+                $('#link_foto').val(data.campo6);
             } else {
-                console.error('Cliente não encontrado.');
+                console.error('Produto não encontrado.');
             }
         },
         error: function (error) {
@@ -77,14 +76,16 @@ function editarRegistro(id) {
 
 function salvarEdicao() {
     $.ajax({
-        url: '/Cliente/Update',
+        url: '/Produto/Update',
         type: 'POST',
         data: {
-            id: clienteId,
+            id: produtoId,
             campo1: $('#nome').val(),
-            campo2: $('#cpf_cnpj').val(),
-            campo3: $('#email').val(),
-            campo4: $('#senha').val(),
+            campo2: $('#descricao').val(),
+            campo3: $('#preco_unitario').val(),
+            campo4: $('#quantidade_estoque').val(),
+            campo5: $('#unidade_medida').val(),
+            campo6: $('#link_foto').val()
         },
         success: function (response) {
             alert('Registro atualizado com sucesso.');
@@ -99,7 +100,7 @@ function salvarEdicao() {
 
 function excluirRegistro(id) {
     $.ajax({
-        url: 'Cliente/Delete',
+        url: '/Produto/Delete',
         type: 'POST',
         data: { id: id },
         success: function (response) {
@@ -107,13 +108,13 @@ function excluirRegistro(id) {
             carregarDadosGrid();
         },
         error: function (error) {
-            console.error('Erro ao excluir registro: ' + error.responseText);
+            alert('Erro ao excluir registro: ' + error.responseText);
         }
     });
 }
 
 $(document).ready(function () {
-    $('#clienteForm').submit(function (e) {
+    $('#produtoForm').submit(function (e) {
         e.preventDefault();
 
         var formData = $(this).serialize();
@@ -137,7 +138,5 @@ function fecharModal() {
 }
 
 function carregarDadosGrid() {
-    $("#jqGridCliente").trigger("reloadGrid");
+    $("#jqGridProduto").trigger("reloadGrid");
 }
-
-

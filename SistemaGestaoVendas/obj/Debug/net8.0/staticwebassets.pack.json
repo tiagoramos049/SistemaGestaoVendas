@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\js\\cliente.js"
     },
     {
+      "Id": "C:\\Users\\SQi\\source\\repos\\SistemaGestaoVendas\\SistemaGestaoVendas\\wwwroot\\js\\produto.js",
+      "PackagePath": "staticwebassets\\js\\produto.js"
+    },
+    {
       "Id": "C:\\Users\\SQi\\source\\repos\\SistemaGestaoVendas\\SistemaGestaoVendas\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

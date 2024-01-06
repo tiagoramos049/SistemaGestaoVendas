@@ -48,15 +48,45 @@
         }
     });
 });
+var vendedorId;
 
 function editarRegistro(id) {
-    console.log('Editar Registro: ' + id);
+    $('#editarModal').modal('show');
+    vendedorId = id;
+    $.ajax({
+        url: '/Vendedor/GetDataForEdit',
+        type: 'GET',
+        data: { id: id },
+        success: function (data) {
+            if (data.success) {
+                $('#nome').val(data.campo1);
+                $('#email').val(data.campo2);
+                $('#senha').val(data.campo3);
+                
+            } else {
+                console.error('Vendedor não encontrado.');
+            }
+        },
+        error: function (error) {
+            console.error('Erro ao obter dados para edição: ' + error.responseText);
+        }
+    });
+}
+
+function salvarEdicao() {
     $.ajax({
         url: '/Vendedor/Update',
         type: 'POST',
-        data: { id: id }, 
+        data: {
+            id: vendedorId,
+            campo1: $('#nome').val(),
+            campo2: $('#email').val(),
+            campo3: $('#senha').val(),
+        },
         success: function (response) {
-            console.log('Registro atualizado com sucesso.');
+            alert('Registro atualizado com sucesso.');
+            $('#editarModal').modal('hide');
+            carregarDadosGrid();
         },
         error: function (error) {
             console.error('Erro ao atualizar registro: ' + error.responseText);
@@ -65,13 +95,13 @@ function editarRegistro(id) {
 }
 
 function excluirRegistro(id) {
-    console.log('Excluir Registro: ' + id);
     $.ajax({
         url: '/Vendedor/Delete',
         type: 'POST',
         data: { id: id }, 
         success: function (response) {
-            console.log('Registro excluído com sucesso.');
+            alert('Registro excluído com sucesso.');
+            carregarDadosGrid();
         },
         error: function (error) {
             console.error('Erro ao excluir registro: ' + error.responseText);
@@ -98,3 +128,11 @@ $(document).ready(function () {
         });
     });
 });
+
+function fecharModal() {
+    $('#editarModal').modal('hide');
+}
+
+function carregarDadosGrid() {
+    $("#jqGridVendedor").trigger("reloadGrid");
+}

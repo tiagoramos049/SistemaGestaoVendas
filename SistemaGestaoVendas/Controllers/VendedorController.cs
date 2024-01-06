@@ -65,15 +65,50 @@ namespace SistemaGestaoVendas.Controllers
             });
         }
 
-        [HttpPost]
-        public IActionResult Update(int id)
+        [HttpGet]
+        public IActionResult GetDataForEdit(int id)
         {
             try
             {
-                var produto = _vendedorRepository.GetById(id);
-                _vendedorRepository.Update(produto);
+                var vendedor = _vendedorRepository.GetById(id);
 
-                return RedirectToAction("Index"); // Substitua "Index" pela sua ação desejada
+                if (vendedor == null)
+                {
+                    return Json(new { success = false, message = "Vendedor não encontrado." });
+                }
+
+                return Json(new
+                {
+                    success = true,
+                    campo1 = vendedor.Nome,
+                    campo2 = vendedor.Email,
+                    campo3 = vendedor.Senha,
+                });
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = "Erro ao obter dados para edição: " + ex.Message });
+            }
+        }
+
+        [HttpPost]
+        public IActionResult Update(int id, string campo1, string campo2, string campo3)
+        {
+            try
+            {
+                var vendedor = _vendedorRepository.GetById(id);
+
+                if (vendedor == null)
+                {
+                    return Json(new { success = false, message = "Vendedor não encontrado." });
+                }
+                vendedor.Nome = campo1;
+                vendedor.Email = campo2;
+                vendedor.Senha = campo3;
+
+                _vendedorRepository.Update(vendedor);
+
+                return Json(new { success = true, message = "Registro atualizado com sucesso." });
             }
             catch (Exception ex)
             {

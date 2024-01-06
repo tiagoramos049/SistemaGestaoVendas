@@ -1,4 +1,37 @@
-﻿<div id="mensagem"></div>
+﻿<div class="modal" id="editarModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Editar Registro</h5>
+            </div>
+            <div class="modal-body">
+                <form id="formularioEdicao">
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" name="nome">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cpf_cnpj" class="form-label">Cpf Cnpj</label>
+                        <textarea class="form-control" id="cpf_cnpj" name="cpf_cnpj"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <textarea class="form-control" id="email" name="email"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="senha" class="form-label">Senha</label>
+                        <textarea class="form-control" id="senha" name="senha"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" onclick="fecharModal()">Fechar</button>
+                <button type="button" class="btn btn-primary" onclick="salvarEdicao()">Salvar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="mensagem"></div>
 
 <form asp-action="Index">
     <div class="container">
