@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using SistemaGestaoVendas.Interfaces;
 using SistemaGestaoVendas.Models.Clientes;
 using SistemaGestaoVendas.Models.Produtos;
@@ -13,7 +14,7 @@ namespace SistemaGestaoVendas.Controllers
         {
             _clienteRepository = cliente;
         }
-
+        
         public IActionResult Index()
         {
             var cliente = _clienteRepository.GetAll();

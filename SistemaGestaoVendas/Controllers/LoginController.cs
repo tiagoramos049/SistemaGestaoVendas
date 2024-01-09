@@ -1,19 +1,23 @@
 ﻿using Dapper;
 using Microsoft.AspNetCore.Mvc;
 using SistemaGestaoVendas.DAO;
+using SistemaGestaoVendas.Interfaces;
 using SistemaGestaoVendas.Models.Clientes;
 using SistemaGestaoVendas.Models.Login;
+using SistemaGestaoVendas.Models.Vendas;
 using SistemaGestaoVendas.Models.Vendedores;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 
 namespace SistemaGestaoVendas.Controllers
 {
     public class LoginController : Controller
     {
         private readonly Dao _dao;
-        public LoginController(Dao dao)
+        private readonly ILogin _login;
+        public LoginController(Dao dao, ILogin login)
         {
-            _dao = dao;
+            _dao = dao; _login = login;
         }
 
         [HttpGet]
@@ -21,47 +25,24 @@ namespace SistemaGestaoVendas.Controllers
         {
             return View();
         }
+
         [HttpPost]
         public IActionResult Index(Login login)
         {
-            var cliente = GetClienteByEmailAndPassword(login.Email, login.Senha);
-            var vendedor = GetVendedorByEmailAndPassword(login.Email, login.Senha);
+            var validarEmailSenhaCliente = _login.ValidarEmailSenhaCliente(login.Email, login.Senha);
+            var validarEmailSenhaVendedor = _login.ValidarEmailSenhaVendedor(login.Email, login.Senha);
 
-            if (cliente != null)
+            if (validarEmailSenhaCliente != null && validarEmailSenhaCliente.Email == login.Email && validarEmailSenhaCliente.Senha == login.Senha)
             {
-                // Usuário autenticado como cliente
-                ViewBag.UsuarioLogado = "Cliente";
+                return RedirectToAction("Index", "Produto", new { userType = "Cliente" });
             }
-            else if (vendedor != null)
+            else if (validarEmailSenhaVendedor != null && validarEmailSenhaVendedor.Email == login.Email && validarEmailSenhaVendedor.Senha == login.Senha)
             {
-                // Usuário autenticado como vendedor
-                ViewBag.UsuarioLogado = "Vendedor";
+                return RedirectToAction("Index", "Produto", new { userType = "Vendedor" });
             }
             else
             {
-                // Falha na autenticação, redirecione ou retorne uma mensagem de erro
-                ViewBag.UsuarioLogado = "Não Logado";
-            }
-
-            return View();
-        }
-        private async Task<Cliente> GetClienteByEmailAndPassword(string email, string senha)
-        {
-            using (IDbConnection dbConnection = _dao.Connection)
-            {
-                dbConnection.Open();
-                return await dbConnection.QueryFirstOrDefaultAsync<Cliente>("SELECT * FROM Cliente WHERE email = @email AND senha = @senha",
-                     new { Email = email, Senha = senha });
-            }
-        }
-
-        private Vendedor GetVendedorByEmailAndPassword(string email, string senha)
-        {
-            using (IDbConnection dbConnection = _dao.Connection)
-            {
-                dbConnection.Open();
-                return dbConnection.QueryFirstOrDefault<Vendedor>("SELECT * FROM Vendedor WHERE email = @email AND senha = @senha",
-                    new { Email = email, Senha = senha });
+                return BadRequest();
             }
         }
     }

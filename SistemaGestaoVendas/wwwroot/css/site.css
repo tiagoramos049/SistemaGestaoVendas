@@ -19,8 +19,12 @@ html {
 
 body {
     margin-bottom: 60px;
-    background-color: slateblue;
+    background-image: url('/fotos/sistemagestao.jpg');
+    background-size: cover; /* Isso ajustará a imagem para cobrir toda a tela */
+    background-position: center center; /* Isso centralizará a imagem na tela */
+    background-attachment: fixed; /* Isso fixará a imagem no fundo, evitando rolar com a página */
 }
+
 
 span.icon-edit,
 span.icon-delete {

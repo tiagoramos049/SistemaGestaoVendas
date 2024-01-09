@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\SQi\\source\\repos\\SistemaGestaoVendas\\SistemaGestaoVendas\\wwwroot\\fotos\\sistemagestao.jpg",
+      "PackagePath": "staticwebassets\\fotos\\sistemagestao.jpg"
+    },
+    {
       "Id": "C:\\Users\\SQi\\source\\repos\\SistemaGestaoVendas\\SistemaGestaoVendas\\wwwroot\\js\\cliente.js",
       "PackagePath": "staticwebassets\\js\\cliente.js"
     },

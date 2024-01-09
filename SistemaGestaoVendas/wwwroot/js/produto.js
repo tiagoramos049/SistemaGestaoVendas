@@ -140,3 +140,23 @@ function fecharModal() {
 function carregarDadosGrid() {
     $("#jqGridProduto").trigger("reloadGrid");
 }
+
+function importarXML() {
+    var input = document.getElementById('xmlFile');
+    var file = input.files[0];
+
+    var formData = new FormData();
+    formData.append('xmlFile', file);
+
+    $.ajax({
+        url: '/Product/ImportXml',
+        type: 'POST',
+        data: formData,
+        contentType: false,
+        processData: false,
+        success: function (data) {
+            // Atualiza a tabela de produtos com os dados importados
+            $('#listaProdutos').html(data);
+        }
+    });
+}

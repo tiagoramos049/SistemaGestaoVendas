@@ -9,5 +9,6 @@
         public decimal Quantidade_Estoque { get; set; }
         public string? Unidade_Medida { get; set; }
         public string? Link_Foto { get; set; }
+        public List<Produto>? produtosImportados { get; set; }
     }
 }

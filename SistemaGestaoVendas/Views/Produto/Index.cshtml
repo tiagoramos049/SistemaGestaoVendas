@@ -40,11 +40,19 @@
     </div>
 </div>
 <div id="mensagem"></div>
+<div class="container">
+    <div class="row">
+        <input type="file" id="xmlFile" style="display: none;" onchange="importarXML()" />
+        <label for="xmlFile" class="btn btn-primary col-md-2">Importar XML NF</label>
+    </div>
+</div>
+<br />
 <form asp-action="Index">
     <div class="container">
         <div class="row">
             <span>Cadastrar novo Produto</span>
             <hr />
+                       
             <div class="col-md-4">
                 <div class="form-group">
                     <label for="Nome">Nome</label>

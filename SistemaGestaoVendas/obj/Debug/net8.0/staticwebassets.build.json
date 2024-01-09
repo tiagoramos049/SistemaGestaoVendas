@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "enk5sgWSVqIPItB7AJ7D7VF5LxPr7AY1xX933ytyefk=",
+  "Hash": "2jVXvavWBD7t3pZ4O9qRqJNN688BACt9n9pe9vIGHv4=",
   "Source": "SistemaGestaoVendas",
   "BasePath": "_content/SistemaGestaoVendas",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\SQi\\source\\repos\\SistemaGestaoVendas\\SistemaGestaoVendas\\wwwroot\\fotos\\sistemagestao.jpg",
+      "SourceId": "SistemaGestaoVendas",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SQi\\source\\repos\\SistemaGestaoVendas\\SistemaGestaoVendas\\wwwroot\\",
+      "BasePath": "_content/SistemaGestaoVendas",
+      "RelativePath": "fotos/sistemagestao.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fotos\\sistemagestao.jpg"
     },
     {
       "Identity": "C:\\Users\\SQi\\source\\repos\\SistemaGestaoVendas\\SistemaGestaoVendas\\wwwroot\\js\\cliente.js",

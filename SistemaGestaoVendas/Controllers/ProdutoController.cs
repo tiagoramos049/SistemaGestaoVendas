@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using System.Text.Json;
 using SistemaGestaoVendas.Models.Produtos;
+using System.Xml.Linq;
 
 namespace SistemaGestaoVendas.Controllers
 {
@@ -142,6 +143,27 @@ namespace SistemaGestaoVendas.Controllers
                 return Json(new { success = true, message = "Erro ao Deletar o registro: " + ex.Message });
             }
             
+        }
+        [HttpPost]
+        public IActionResult ImportXml(IFormFile xmlFile)
+        {
+            List<Produto> produtosImportados = new List<Produto>();
+
+            if (xmlFile != null && xmlFile.Length > 0)
+            {
+                using (var reader = new StreamReader(xmlFile.OpenReadStream()))
+                {
+                    XDocument xmlDoc = XDocument.Parse(reader.ReadToEnd());
+
+                    produtosImportados = xmlDoc.Descendants("produto").Select(p => new Produto
+                    {
+                        Nome = p.Element("nome").Value,
+                        Descricao = p.Element("descricao").Value
+                    }).ToList();
+                }
+            }
+
+            return PartialView("_ListaProdutos", produtosImportados);
         }
     }
 }
