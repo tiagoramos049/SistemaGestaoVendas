@@ -9,15 +9,25 @@ namespace SistemaGestaoVendas.Controllers
     public class VendedorController : Controller
     {
         private readonly IVendedor _vendedorRepository;
-        public VendedorController(IVendedor vendedor)
+        private readonly ILogger _logger;
+        public VendedorController(IVendedor vendedor, ILogger logger)
         {
             _vendedorRepository = vendedor;
+            _logger = logger;
         }
-
+        [HttpGet]
         public IActionResult Index()
         {
-            var vendedor = _vendedorRepository.GetAll();
-            return View(vendedor);
+            try
+            {
+                var vendedor = _vendedorRepository.GetAll();
+                return View(vendedor);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Erro ao processar a solicitação.");
+                return View("Error"); // Exibir uma página de erro personalizada, se desejar.
+            }
         }
         [HttpPost]
         public IActionResult Index(Vendedor vendedor)
