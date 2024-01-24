@@ -7,7 +7,6 @@ namespace SistemaGestaoVendas.Interfaces
 {
     public interface ILogin
     {
-        public Vendedor ValidarEmailSenhaVendedor(string email, string senha);
-        public Cliente ValidarEmailSenhaCliente(string email, string senha); 
+        public bool ValidarLogin(Login login);
     }
 }

@@ -15,12 +15,13 @@
             {
                 name: 'acoes',
                 index: 'acoes',
-                width: 70,
+                width: 90,
                 sortable: false,
                 formatter: function (cellvalue, options, rowObject) {
-                    var editIcon = '<span class="icon-edit" title="Editar" onclick="editarRegistro(' + rowObject.id + ')">&#9998;&nbsp;&nbsp;</span>';
-                    var deleteIcon = '<span class="icon-delete" title="Excluir" onclick="excluirRegistro(' + rowObject.id + ')">&#128465;</span>';
-                    return editIcon + deleteIcon;
+                    var editIcon = '<span class="icon-edit" title="Editar" onclick="editarRegistro(' + rowObject.id +      ')">&#9998;&nbsp;&nbsp;</span>';
+                    var deleteIcon = '<span class="icon-delete" title="Excluir" onclick="excluirRegistro(' + rowObject.id +')">&#128465;&nbsp;&nbsp</span>';
+                    var buyIcon =    '<span class="icon-buy"    title="Comprar" onclick="comprarProduto (' + rowObject.id + ')">&#128722;</span>';
+                    return editIcon + deleteIcon + buyIcon;
                 }
             },
             { name: 'nome', index: 'nome', width: 250 },

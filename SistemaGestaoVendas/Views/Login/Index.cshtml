@@ -31,3 +31,18 @@
         </div>
     </div>
 </section>
+
+@{
+    var loginError = ViewData.ModelState["LoginError"]?.Errors.FirstOrDefault()?.ErrorMessage;
+}
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var loginError = '@loginError';
+
+        if (loginError) {
+            // Exibir a mensagem de erro usando um alert ou qualquer outra abordagem desejada
+            alert(loginError);
+        }
+    });
+</script>

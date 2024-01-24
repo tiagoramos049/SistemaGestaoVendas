@@ -29,21 +29,15 @@ namespace SistemaGestaoVendas.Controllers
         [HttpPost]
         public IActionResult Index(Login login)
         {
-            var validarEmailSenhaCliente = _login.ValidarEmailSenhaCliente(login.Email, login.Senha);
-            var validarEmailSenhaVendedor = _login.ValidarEmailSenhaVendedor(login.Email, login.Senha);
+            bool loginOk = _login.ValidarLogin(login);
 
-            if (validarEmailSenhaCliente != null && validarEmailSenhaCliente.Email == login.Email && validarEmailSenhaCliente.Senha == login.Senha)
+            if (!loginOk)
             {
-                return RedirectToAction("Index", "Produto", new { userType = "Cliente" });
+                ModelState.AddModelError("LoginError", "Credenciais invalidas.");
+                return View();
             }
-            else if (validarEmailSenhaVendedor != null && validarEmailSenhaVendedor.Email == login.Email && validarEmailSenhaVendedor.Senha == login.Senha)
-            {
-                return RedirectToAction("Index", "Produto", new { userType = "Vendedor" });
-            }
-            else
-            {
-                return BadRequest();
-            }
+
+            return Ok(loginOk);
         }
     }
 }
