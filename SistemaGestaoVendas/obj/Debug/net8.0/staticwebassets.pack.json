@@ -21,6 +21,14 @@
       "PackagePath": "staticwebassets\\js\\cliente.js"
     },
     {
+      "Id": "C:\\Users\\SQi\\source\\repos\\SistemaGestaoVendas\\SistemaGestaoVendas\\wwwroot\\js\\contasapagar.js",
+      "PackagePath": "staticwebassets\\js\\contasapagar.js"
+    },
+    {
+      "Id": "C:\\Users\\SQi\\source\\repos\\SistemaGestaoVendas\\SistemaGestaoVendas\\wwwroot\\js\\contasareceber.js",
+      "PackagePath": "staticwebassets\\js\\contasareceber.js"
+    },
+    {
       "Id": "C:\\Users\\SQi\\source\\repos\\SistemaGestaoVendas\\SistemaGestaoVendas\\wwwroot\\js\\produto.js",
       "PackagePath": "staticwebassets\\js\\produto.js"
     },

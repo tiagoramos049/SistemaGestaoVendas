@@ -21,8 +21,17 @@ namespace SistemaGestaoVendas.Controllers
         }
 
         [HttpGet]
-        public IActionResult Index()
+        public IActionResult Index(int? id)
         {
+            if (id !=null) 
+            {
+                if (id == 0) 
+                {
+                    HttpContext.Session.SetString("NomeUsuarioLogado", string.Empty);
+                    HttpContext.Session.SetString("SenhaUsuarioLogado", string.Empty);
+                }
+            }
+
             return View();
         }
 
@@ -36,8 +45,12 @@ namespace SistemaGestaoVendas.Controllers
                 ModelState.AddModelError("LoginError", "Credenciais invalidas.");
                 return View();
             }
-
-            return Ok(loginOk);
+            else 
+            {
+                HttpContext.Session.SetString("NomeUsuarioLogado", login.Email);
+                HttpContext.Session.SetString("SenhaUsuarioLogado", login.Senha);
+                return RedirectToAction("Index","Produto");
+            }
         }
     }
 }

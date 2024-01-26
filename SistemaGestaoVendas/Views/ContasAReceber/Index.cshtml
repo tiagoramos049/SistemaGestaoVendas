@@ -1,0 +1,112 @@
+﻿<div class="modal" id="editarModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Editar Registro</h5>
+            </div>
+            <div class="modal-body">
+                <form id="formularioEdicao">
+                    <div class="mb-3">
+                        <label for="DataEmissao" class="form-label">DataEmissao</label>
+                        <input type="text" class="form-control" id="DataEmissao" name="DataEmissao">
+                    </div>
+                    <div class="mb-3">
+                        <label for="DataVencimento" class="form-label">DataVencimento</label>
+                        <textarea class="form-control" id="DataVencimento" name="DataVencimento"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Favorecido" class="form-label">Favorecido</label>
+                        <textarea class="form-control" id="Favorecido" name="Favorecido"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Valor" class="form-label">Valor</label>
+                        <textarea class="form-control" id="Valor" name="Valor"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="FormaPagamento" class="form-label">FormaPagamento</label>
+                        <textarea class="form-control" id="FormaPagamento" name="FormaPagamento"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Banco" class="form-label">Banco</label>
+                        <textarea class="form-control" id="Banco" name="Banco"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" onclick="fecharModal()">Fechar</button>
+                <button type="button" class="btn btn-primary" onclick="salvarEdicao()">Salvar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="mensagem"></div>
+
+<br />
+<form asp-action="Index">
+    <div class="container">
+        <div class="row">
+            <span>Cadastrar nova Contas a Receber</span>
+            <hr />
+
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="DataEmissao">DataEmissao</label>
+                    <input type="text" class="form-control" name="DataEmissao" placeholder="DataEmissao">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="DataVencimento">DataVencimento</label>
+                    <input type="text" class="form-control" name="DataVencimento" placeholder="DataVencimento">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="Favorecido">Favorecido</label>
+                    <input type="text" class="form-control" name="Favorecido" placeholder="Favorecido">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="Valor">Valor</label>
+                    <input type="text" class="form-control" name="Valor" placeholder="Valor">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="FormaPagamento">FormaPagamento</label>
+                    <input type="text" class="form-control" name="FormaPagamento" placeholder="FormaPagamento">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="Banco">Banco</label>
+                    <input type="text" class="form-control" name="Banco" placeholder="Banco">
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-12">
+                <button type="submit" class="btn btn-primary">Salvar</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<br />
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <table id="jqGridContasAReceber"></table>
+            <div id="jqGridPager"></div>
+        </div>
+    </div>
+</div>
+
+@section contasareceber {
+    <script src="~/js/contasareceber.js"></script>
+}

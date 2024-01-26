@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/SistemaGestaoVendas.styles.css" asp-append-version="true" />
 </head>
-<body>
+<body onload="CarregaUsuarioLogado()">
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar navbar-dark bg-dark border-bottom box-shadow mb-3">
             <div class="container-fluid">
@@ -38,6 +38,12 @@
                         <li class="nav-item">
                             <a class="nav-link text-white" asp-area="" asp-controller="Dashboard" asp-action="Index">Dashboard</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="ContasAPagar" asp-action="Index">Contas a Pagar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="ContasAReceber" asp-action="Index">Contas a Receber</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <div class="dropdown">
                                 <a class="btn btn-primary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -55,7 +61,11 @@
                             <a class="nav-link text-white" asp-area="" asp-controller="Login" asp-action="Index">Login</a>
                         </li>
                     </ul>
-                    <span class="version-label text-white">Versão: 1.0</span>
+                    @using Microsoft.AspNetCore.Http
+                    @inject IHttpContextAccessor HttpContextAccessor
+                    <div id="NomeUsuarioLogado" class="text-white"></div>
+
+                    @* <span class="version-label text-white">Versão: 1.0</span> *@
                 </div>
             </div>
         </nav>
@@ -84,8 +94,26 @@
     @RenderSection("clienterender", required: false)
     @RenderSection("vendedorender", required: false)
     @RenderSection("produtorender", required: false)
+    @RenderSection("contasapagar", required: false)
+    @RenderSection("contasareceber", required: false)
     @await RenderSectionAsync("Scripts", required: false)
 
-    
+    <script>
+
+        function CarregaUsuarioLogado() 
+        {
+            var nome = '@HttpContextAccessor.HttpContext.Session.GetString("NomeUsuarioLogado")'
+            if (nome != "") 
+            {
+                var divNome = document.getElementById("NomeUsuarioLogado");
+                divNome.innerHTML = "Olá " + nome + "<a href='../Login/Index/0'>(Sair)</a>";
+                divNome.style = "";
+            }
+            else 
+            {
+                window.location.href = '../Login/Index';
+            }
+        }
+    </script>
 </body>
 </html>
