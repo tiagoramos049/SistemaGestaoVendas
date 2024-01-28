@@ -1,4 +1,4 @@
-﻿namespace SistemaGestaoVendas.Models.ContasAReceber
+﻿namespace SistemaGestaoVendas.Models.ContasAReceberrs
 {
     public class ContasAReceber
     {

@@ -1,5 +1,5 @@
 ﻿using SistemaGestaoVendas.Models.Clientes;
-using SistemaGestaoVendas.Models.ContasAPagar;
+using SistemaGestaoVendas.Models.ContasAPagarrs;
 
 namespace SistemaGestaoVendas.Interfaces
 {

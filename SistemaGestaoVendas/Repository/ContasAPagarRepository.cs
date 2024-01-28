@@ -1,7 +1,7 @@
 ﻿using Dapper;
 using SistemaGestaoVendas.DAO;
 using SistemaGestaoVendas.Interfaces;
-using SistemaGestaoVendas.Models.ContasAPagar;
+using SistemaGestaoVendas.Models.ContasAPagarrs;
 using SistemaGestaoVendas.Models.Produtos;
 using System.Data;
 

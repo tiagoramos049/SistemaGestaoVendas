@@ -1,0 +1,92 @@
+﻿@model SistemaGestaoVendas.AutoMapper.ConciliacaoViewModel
+
+<h2>Conciliação de Contas</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Data Emissão</th>
+        <th>Data Vencimento</th>
+        <th>Favorecido</th>
+        <th>Forma de Pagamento Pagar</th>
+        <th>Banco Pagar</th>
+        <th>Valor Pagar</th>
+        <th>Valor Receber</th>
+        <th>Forma de Pagamento Receber</th>
+        <th>Banco Receber</th>
+        <th>Saldo</th>
+    </tr>
+    @for (var i = 0; i < Math.Max(Model.ContasAPagar.Count(), Model.ContasAReceber.Count()); i++)
+    {
+        <tr>
+            @if (i < Model.ContasAPagar.Count())
+            {
+                var contaPagar = Model.ContasAPagar.ElementAt(i);
+                <td>@contaPagar.DataEmissao</td>
+                <td>@contaPagar.DataVencimento</td>
+                <td>@contaPagar.Favorecido</td>
+                <td>@contaPagar.FormaPagamento</td>
+                <td>@contaPagar.Banco</td>
+                <td style="color: red;">@contaPagar.Valor</td>
+            }
+            else
+            {
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            }
+
+            @if (i < Model.ContasAReceber.Count())
+            {
+                var contaReceber = Model.ContasAReceber.ElementAt(i);
+                <td style="color: green;">@contaReceber.Valor</td>
+                <td>@contaReceber.FormaPagamento</td>
+                <td>@contaReceber.Banco</td>
+            }
+            else
+            {
+                <td></td>
+                <td></td>
+                <td></td>
+            }
+
+            @{
+                var saldo = 0m;
+                if (i < Model.ContasAPagar.Count())
+                {
+                    saldo -= Model.ContasAPagar.ElementAt(i).Valor;
+                }
+                if (i < Model.ContasAReceber.Count())
+                {
+                    saldo += Model.ContasAReceber.ElementAt(i).Valor;
+                }
+            }
+
+            <td>@saldo</td>
+        </tr>
+    }
+    <tr>
+        <td colspan="9" style="text-align: right;"><strong>Saldo Total</strong></td>
+        <td>
+            @{
+                // Soma de todos os valores a pagar
+                var totalAPagar = Model.ContasAPagar.Sum(cp => cp.Valor);
+
+                // Soma de todos os valores a receber
+                var totalAReceber = Model.ContasAReceber.Sum(cr => cr.Valor);
+
+                // Calcula o saldo total
+                var saldoTotal = totalAReceber - totalAPagar;
+
+                // Determina o sinal do saldo total
+                var sinalSaldoTotal = saldoTotal < 0 ? "-" : "+";
+
+                // Calcula o valor absoluto do saldo total
+                var saldoTotalAbsoluto = Math.Abs(saldoTotal);
+            }
+            @sinalSaldoTotal @saldoTotalAbsoluto
+        </td>
+    </tr>
+</table>

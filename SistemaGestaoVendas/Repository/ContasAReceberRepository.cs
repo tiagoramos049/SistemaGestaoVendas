@@ -1,8 +1,8 @@
 ﻿using Dapper;
 using SistemaGestaoVendas.DAO;
 using SistemaGestaoVendas.Interfaces;
-using SistemaGestaoVendas.Models.ContasAPagar;
-using SistemaGestaoVendas.Models.ContasAReceber;
+using SistemaGestaoVendas.Models.ContasAPagarrs;
+using SistemaGestaoVendas.Models.ContasAReceberrs;
 using System.Data;
 
 namespace SistemaGestaoVendas.Repository

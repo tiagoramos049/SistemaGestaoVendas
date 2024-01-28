@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SistemaGestaoVendas.Interfaces;
-using SistemaGestaoVendas.Models.ContasAPagar;
+using SistemaGestaoVendas.Models.ContasAPagarrs;
 using SistemaGestaoVendas.Models.Produtos;
 using SistemaGestaoVendas.Repository;
 using System.Drawing;

@@ -3,8 +3,8 @@ using SistemaGestaoVendas.DAO;
 using SistemaGestaoVendas.Interfaces;
 using SistemaGestaoVendas.Repository;
 using AutoMapper;
-using SistemaGestaoVendas.Models.ContasAReceber;
-using SistemaGestaoVendas.Models.ContasAPagar;
+using SistemaGestaoVendas.Models.ContasAReceberrs;
+using SistemaGestaoVendas.Models.ContasAPagarrs;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -20,7 +20,7 @@
                 formatter: function (cellvalue, options, rowObject) {
                     var editIcon = '<span class="icon-edit" title="Editar" onclick="editarRegistro(' + rowObject.id +      ')">&#9998;&nbsp;&nbsp;</span>';
                     var deleteIcon = '<span class="icon-delete" title="Excluir" onclick="excluirRegistro(' + rowObject.id +')">&#128465;&nbsp;&nbsp</span>';
-                    var buyIcon =    '<span class="icon-buy"    title="Comprar" onclick="comprarProduto (' + rowObject.id + ')">&#128722;</span>';
+                    var buyIcon =    '<span class="icon-sell"    title="Registrar Venda" onclick="comprarProduto (' + rowObject.id + ')">&#128722;</span>';
                     return editIcon + deleteIcon + buyIcon;
                 }
             },

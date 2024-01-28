@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SistemaGestaoVendas.Interfaces;
-using SistemaGestaoVendas.Models.ContasAPagar;
-using SistemaGestaoVendas.Models.ContasAReceber;
+using SistemaGestaoVendas.Models.ContasAPagarrs;
+using SistemaGestaoVendas.Models.ContasAReceberrs;
 
 namespace SistemaGestaoVendas.Controllers
 {

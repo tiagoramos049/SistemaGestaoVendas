@@ -1,4 +1,4 @@
-﻿namespace SistemaGestaoVendas.Models.ContasAPagar
+﻿namespace SistemaGestaoVendas.Models.ContasAPagarrs
 {
     public class ContasAPagar
     {
