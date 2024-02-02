@@ -9,5 +9,6 @@
         public decimal Valor { get; set; }
         public string FormaPagamento { get; set; }
         public string Banco { get; set; }
+        public bool BaixarConta { get; set; }
     }
 }

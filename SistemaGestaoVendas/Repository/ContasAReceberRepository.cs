@@ -46,7 +46,7 @@ namespace SistemaGestaoVendas.Repository
             using (IDbConnection dbConnection = _dao.Connection)
             {
                 dbConnection.Open();
-                dbConnection.Execute("UPDATE ContasAReceber SET DataEmissao = @DataEmissao, DataVencimento = @DataVencimento, Favorecido = @Favorecido, Valor = @Valor, FormaPagamento = @FormaPagamento, Banco = @Banco WHERE id = @Id", contasAReceber);
+                dbConnection.Execute("UPDATE ContasAReceber SET DataEmissao = @DataEmissao, DataVencimento = @DataVencimento, Favorecido = @Favorecido, Valor = @Valor, FormaPagamento = @FormaPagamento, Banco = @Banco, BaixarConta = @BaixarConta WHERE id = @Id", contasAReceber);
             }
         }
         public void Delete(int id)

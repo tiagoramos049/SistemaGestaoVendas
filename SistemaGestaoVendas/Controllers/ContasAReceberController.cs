@@ -33,13 +33,27 @@ namespace SistemaGestaoVendas.Controllers
             }
         }
         [HttpPost]
-        public IActionResult BaixarConta(int id, DateTime dataPagamento)
+        public IActionResult BaixarConta(int id)
         {
-            // Aqui você irá processar a marcação da conta como baixada, por exemplo, atualizando-a no banco de dados
-            // Certifique-se de adicionar a lógica necessária para processar o baixar da conta aqui
+            try
+            {
+                var conta = _contasAReceberRepository.GetById(id);
+                if (conta != null)
+                {
+                    conta.BaixarConta = true; // Marcar a conta como baixada
+                    _contasAReceberRepository.Update(conta); // Atualizar a conta no banco de dados
 
-            // Após baixar a conta, você pode redirecionar para a página desejada ou retornar um JSON com o resultado da operação
-            return Json(new { success = true, message = "Conta marcada como baixada com sucesso." });
+                    return Json(new { success = true, message = "Conta baixada com sucesso." });
+                }
+                else
+                {
+                    return Json(new { success = false, message = "Conta não encontrada." });
+                }
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = ex.Message });
+            }
         }
         public IActionResult GridData(int page, int rows, string sidx, string sord)
         {

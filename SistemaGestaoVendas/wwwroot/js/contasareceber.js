@@ -20,8 +20,17 @@
                 formatter: function (cellvalue, options, rowObject) {
                     var editIcon = '<span class="icon-edit" title="Editar" onclick="editarRegistro(' + rowObject.id + ')">&#9998;&nbsp;&nbsp;</span>';
                     var deleteIcon = '<span class="icon-delete" title="Excluir" onclick="excluirRegistro(' + rowObject.id + ')">&#128465;&nbsp;&nbsp</span>';
-                    var baixarIcon = '<span class="icon-baixar" title="Baixar" onclick="baixarConta(' + rowObject.id + ')">&#128179;&nbsp;&nbsp</span>';
-                    return editIcon + deleteIcon + baixarIcon;
+
+                    // Verificar se a conta está marcada como baixada
+                    if (rowObject.contaBaixada) {
+                        // Se sim, renderizar o ícone de "Conta Baixada" com um título informativo
+                        var baixadoIcon = '<span class="icon-baixado" title="Conta Baixada">&#10003;&nbsp;&nbsp;</span>';
+                        return editIcon + deleteIcon + baixadoIcon;
+                    } else {
+                        // Senão, renderizar o ícone de "Baixar" normal
+                        var baixarIcon = '<span class="icon-baixar" title="Baixar" onclick="baixarConta(' + rowObject.id + ')">&#128179;&nbsp;&nbsp;</span>';
+                        return editIcon + deleteIcon + baixarIcon;
+                    }
                 }
             },
             { name: 'dataEmissao', index: 'dataEmissao', width: 250 },
@@ -143,10 +152,23 @@ function carregarDadosGrid() {
 }
 
 function baixarConta(contasAReceberId) {
-    // Aqui você marcará a conta como baixada (por exemplo, enviando uma solicitação para o servidor ou atualizando o estado no cliente)
-
-    // Após a marcação da conta como baixada, você pode adicionar essa conta à tela de conciliação bancária.
-    // Suponha que você tenha uma função chamada "adicionarConciliacaoBancaria" que aceite os detalhes da conta baixada.
-    var contaBaixada = buscarContaPorId(contasAReceberId); // Esta função buscará os detalhes da conta com base no ID
-    adicionarConciliacaoBancaria(contaBaixada); // Adicionando à tela de conciliação bancária
+    $.ajax({
+        url: '/ContasAReceber/BaixarConta', // Rota para a action que baixa a conta
+        type: 'POST',
+        data: { id: contasAReceberId }, // Envia o ID da conta a receber
+        success: function (response) {
+            if (response.success) {
+                alert('Conta baixada com sucesso.');
+                // Atualizar a interface para refletir que a conta foi baixada
+                var rowId = response.contasAReceberId; // Suponha que sua resposta contenha o ID da conta baixada
+                var rowData = response.rowData; // Suponha que sua resposta contenha os dados atualizados da linha
+                $("#jqGridContasAReceber").jqGrid('setRowData', rowId, rowData);
+            } else {
+                alert('Erro ao baixar conta: ' + response.message);
+            }
+        },
+        error: function (error) {
+            console.error('Erro ao baixar conta: ' + error.responseText);
+        }
+    });
 }
