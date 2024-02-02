@@ -5,6 +5,7 @@ using SistemaGestaoVendas.DAO;
 using SistemaGestaoVendas.Interfaces;
 using SistemaGestaoVendas.Models;
 using System.Data;
+using System.Globalization;
 using System.Xml;
 
 namespace SistemaGestaoVendas.Controllers
@@ -96,11 +97,13 @@ namespace SistemaGestaoVendas.Controllers
         {
             var contasAPagar = _contasAPagarRepository.GetAll();
             var contasAReceber = _contasAReceberRepository.GetAll();
+            var ofx = _conciliacaoContasRepository.GetAll();
             
             var viewModel = new ConciliacaoViewModel
             {
                 ContasAPagar = contasAPagar,
-                ContasAReceber = contasAReceber
+                ContasAReceber = contasAReceber,
+                Ofx = ofx
             };
 
             return View(viewModel);

@@ -20,7 +20,8 @@
                 formatter: function (cellvalue, options, rowObject) {
                     var editIcon = '<span class="icon-edit" title="Editar" onclick="editarRegistro(' + rowObject.id + ')">&#9998;&nbsp;&nbsp;</span>';
                     var deleteIcon = '<span class="icon-delete" title="Excluir" onclick="excluirRegistro(' + rowObject.id + ')">&#128465;&nbsp;&nbsp</span>';
-                    return editIcon + deleteIcon;
+                    var baixarIcon = '<span class="icon-baixar" title="Baixar" onclick="baixarConta(' + rowObject.id + ')">&#128179;&nbsp;&nbsp</span>';
+                    return editIcon + deleteIcon + baixarIcon;
                 }
             },
             { name: 'dataEmissao', index: 'dataEmissao', width: 250 },
@@ -144,3 +145,11 @@ function carregarDadosGrid() {
     $("#jqGridContasAPagar").trigger("reloadGrid");
 }
 
+function baixarConta(contasAPagarId) {
+    // Aqui você marcará a conta como baixada (por exemplo, enviando uma solicitação para o servidor ou atualizando o estado no cliente)
+
+    // Após a marcação da conta como baixada, você pode adicionar essa conta à tela de conciliação bancária.
+    // Suponha que você tenha uma função chamada "adicionarConciliacaoBancaria" que aceite os detalhes da conta baixada.
+    var contaBaixada = buscarContaPorId(contasAPagarId); // Esta função buscará os detalhes da conta com base no ID
+    adicionarConciliacaoBancaria(contaBaixada); // Adicionando à tela de conciliação bancária
+}

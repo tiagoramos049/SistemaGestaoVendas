@@ -1,5 +1,5 @@
 ﻿@model SistemaGestaoVendas.AutoMapper.ConciliacaoViewModel
-
+<br/>
 <h2>Conciliação de Contas</h2>
 
 <form asp-action="ConciliacaoContas" enctype="multipart/form-data" method="post">
@@ -9,15 +9,14 @@
     </div>
     <button type="submit" class="btn btn-primary">Importar Extrato</button>
 </form>
-
+<br />
 <table class="table table-bordered">
     <tr>
-        <th>Saldo Pagar</th>
-        <th>Saldo Receber</th>
-        <th>Saldo Total</th>
+        <th>Saldo Pagar/Receber</th>
+        <th>OFX Importado</th>
     </tr>
     @{
-        int maxIterations = Math.Max(Model.ContasAPagar.Count(), Model.ContasAReceber.Count());
+        int maxIterations = Math.Max(Math.Max(Model.ContasAPagar.Count(), Model.ContasAReceber.Count()), Model.Ofx.Count());
         for (int i = 0; i < maxIterations; i++)
         {
             <tr>
@@ -25,23 +24,22 @@
                     @if (i < Model.ContasAPagar.Count())
                     {
                         var contaPagar = Model.ContasAPagar.ElementAt(i);
-                        <span style="color: red;">@contaPagar.Valor</span> @contaPagar.Favorecido
+                        <span style="color: red;">@contaPagar.DataEmissao.ToString("dd/MM/yyyy") @contaPagar.Valor</span> @contaPagar.Favorecido <br />
+                        
                     }
-                
-                    <br />
+
                     @if (i < Model.ContasAReceber.Count())
                     {
                         var contaReceber = Model.ContasAReceber.ElementAt(i);
-                        <span style="color: green;">@contaReceber.Valor</span> @contaReceber.Favorecido
+                        <span style="color: green;">@contaReceber.DataEmissao.ToString("dd/MM/yyyy") @contaReceber.Valor</span> @contaReceber.Favorecido <br />
                     }
                 </td>
                 <td>
-                    @{
-                        var saldoTotalPagar = i < Model.ContasAPagar.Count() ? Model.ContasAPagar.Take(i + 1).Sum(cp => cp.Valor) : 0;
-                        var saldoTotalReceber = i < Model.ContasAReceber.Count() ? Model.ContasAReceber.Take(i + 1).Sum(cr => cr.Valor) : 0;
-                        var saldoTotal = saldoTotalReceber - saldoTotalPagar;
+                    @if (i < Model.Ofx.Count())
+                    {
+                        var ofx = Model.Ofx.ElementAt(i);
+                        <span>@ofx.DATA</span> @ofx.TRNAMT <span>@ofx.MEMO</span> <br />
                     }
-                    @saldoTotal
                 </td>
             </tr>
         }

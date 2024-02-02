@@ -1,4 +1,5 @@
-﻿using SistemaGestaoVendas.Models.ContasAPagarrs;
+﻿using SistemaGestaoVendas.Models;
+using SistemaGestaoVendas.Models.ContasAPagarrs;
 using SistemaGestaoVendas.Models.ContasAReceberrs;
 
 namespace SistemaGestaoVendas.AutoMapper
@@ -7,5 +8,7 @@ namespace SistemaGestaoVendas.AutoMapper
     {
         public IEnumerable<ContasAPagar> ContasAPagar { get; set; }
         public IEnumerable<ContasAReceber> ContasAReceber { get; set; }
+        public IEnumerable<OfxTransaction> Ofx { get; set; }
+
     }
 }

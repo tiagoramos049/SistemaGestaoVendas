@@ -23,6 +23,14 @@ namespace SistemaGestaoVendas.Repository
                 return count > 0;
             }
         }
+        public IEnumerable<OfxTransaction> GetAll()
+        {
+            using (IDbConnection dbConnection = _dao.Connection)
+            {
+                dbConnection.Open();
+                return dbConnection.Query<OfxTransaction>("SELECT * FROM OFXData");
+            }
+        }
         public void Insert(OfxTransaction? ofxTransaction)
         {
             // Verifica se o FITID já existe antes de inserir
