@@ -44,6 +44,10 @@ span.icon-delete {
     height: calc(100% - 73px);
 }
 
+.disabled-icon {
+    color: #999; /* Defina a cor desejada para os ícones desativados */
+}
+
 @media (max-width: 450px) {
     .h-custom {
         height: 100%;

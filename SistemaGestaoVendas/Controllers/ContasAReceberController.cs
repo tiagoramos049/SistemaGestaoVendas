@@ -57,16 +57,16 @@ namespace SistemaGestaoVendas.Controllers
         }
         public IActionResult GridData(int page, int rows, string sidx, string sord)
         {
-            var contasARecebers = _contasAReceberRepository.GetAll();
+            var contasAReceber = _contasAReceberRepository.GetAll(); // Obter todas as contas a receber
 
-            contasARecebers = SortProdutos(contasARecebers, sidx, sord);
+            contasAReceber = SortProdutos(contasAReceber, sidx, sord); // Ordenar conforme necessário
 
-            var totalRecords = contasARecebers.Count();
+            var totalRecords = contasAReceber.Count();
             var totalPages = (int)Math.Ceiling((double)totalRecords / rows);
 
-            contasARecebers = contasARecebers.Skip((page - 1) * rows).Take(rows);
+            contasAReceber = contasAReceber.Skip((page - 1) * rows).Take(rows);
 
-            var jsonData = contasARecebers.Select(p => new
+            var jsonData = contasAReceber.Select(p => new
             {
                 id = p.Id,
                 dataEmissao = p.DataEmissao,
@@ -75,6 +75,7 @@ namespace SistemaGestaoVendas.Controllers
                 valor = (decimal)p.Valor,
                 formaPagamento = p.FormaPagamento,
                 banco = p.Banco,
+                contaBaixada = p.BaixarConta // Certifique-se de incluir a propriedade contaBaixada
             });
 
             return Json(new

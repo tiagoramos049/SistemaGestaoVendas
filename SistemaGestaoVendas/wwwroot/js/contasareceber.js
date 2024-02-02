@@ -18,16 +18,15 @@
                 width: 90,
                 sortable: false,
                 formatter: function (cellvalue, options, rowObject) {
-                    var editIcon = '<span class="icon-edit" title="Editar" onclick="editarRegistro(' + rowObject.id + ')">&#9998;&nbsp;&nbsp;</span>';
-                    var deleteIcon = '<span class="icon-delete" title="Excluir" onclick="excluirRegistro(' + rowObject.id + ')">&#128465;&nbsp;&nbsp</span>';
-
-                    // Verificar se a conta está marcada como baixada
+                    var editIcon, deleteIcon;
                     if (rowObject.contaBaixada) {
-                        // Se sim, renderizar o ícone de "Conta Baixada" com um título informativo
                         var baixadoIcon = '<span class="icon-baixado" title="Conta Baixada">&#10003;&nbsp;&nbsp;</span>';
+                        editIcon = '<span class="icon-edit disabled-icon" title="Editar">&#9998;&nbsp;&nbsp;</span>';
+                        deleteIcon = '<span class="icon-delete disabled-icon" title="Excluir">&#128465;&nbsp;&nbsp;</span>';
                         return editIcon + deleteIcon + baixadoIcon;
                     } else {
-                        // Senão, renderizar o ícone de "Baixar" normal
+                        editIcon = '<span class="icon-edit" title="Editar" onclick="editarRegistro(' + rowObject.id + ')">&#9998;&nbsp;&nbsp;</span>';
+                        deleteIcon = '<span class="icon-delete" title="Excluir" onclick="excluirRegistro(' + rowObject.id + ')">&#128465;&nbsp;&nbsp;</span>';
                         var baixarIcon = '<span class="icon-baixar" title="Baixar" onclick="baixarConta(' + rowObject.id + ')">&#128179;&nbsp;&nbsp;</span>';
                         return editIcon + deleteIcon + baixarIcon;
                     }
@@ -166,6 +165,7 @@ function baixarConta(contasAReceberId) {
             } else {
                 alert('Erro ao baixar conta: ' + response.message);
             }
+            carregarDadosGrid();
         },
         error: function (error) {
             console.error('Erro ao baixar conta: ' + error.responseText);
