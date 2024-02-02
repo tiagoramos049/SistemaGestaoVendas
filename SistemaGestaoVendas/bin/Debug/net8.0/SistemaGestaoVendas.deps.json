@@ -11,6 +11,8 @@
           "AutoMapper": "12.0.1",
           "Dapper": "2.1.28",
           "Newtonsoft.Json": "13.0.3",
+          "OFXParser": "1.0.6",
+          "OFXSharp": "1.0.4002",
           "System.Data.SqlClient": "4.8.5"
         },
         "runtime": {
@@ -52,6 +54,25 @@
           }
         }
       },
+      "OFXParser/1.0.6": {
+        "runtime": {
+          "lib/net48/OFXParser.dll": {
+            "assemblyVersion": "1.0.6.0",
+            "fileVersion": "1.0.6.0"
+          }
+        }
+      },
+      "OFXSharp/1.0.4002": {
+        "dependencies": {
+          "SgmlReader": "1.8.11"
+        },
+        "runtime": {
+          "lib/net35/OFXSharp.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.4002.0"
+          }
+        }
+      },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "dependencies": {
           "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
@@ -83,6 +104,14 @@
             "rid": "win-x86",
             "assetType": "native",
             "fileVersion": "4.6.25512.1"
+          }
+        }
+      },
+      "SgmlReader/1.8.11": {
+        "runtime": {
+          "lib/4.0/SgmlReaderDll.dll": {
+            "assemblyVersion": "1.8.11.0",
+            "fileVersion": "1.8.11.0"
           }
         }
       },
@@ -170,6 +199,20 @@
       "path": "newtonsoft.json/13.0.3",
       "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
     },
+    "OFXParser/1.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-d8T0UCIX0teGaGGXWuMLOujrmQBF0vJbscZ7d97RqdRCSNCgHKT191QC2Mu9eLAkXLlT5XC2zBYj0KbGfvSTlA==",
+      "path": "ofxparser/1.0.6",
+      "hashPath": "ofxparser.1.0.6.nupkg.sha512"
+    },
+    "OFXSharp/1.0.4002": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6vnG6qWodNS663swkWI9cX1mVbW4UwWyVf9vY37TwkgBYkTy/PiSl5j9wTKtqlx16fIA2dXFrdjURJGEtJRgpw==",
+      "path": "ofxsharp/1.0.4002",
+      "hashPath": "ofxsharp.1.0.4002.nupkg.sha512"
+    },
     "runtime.native.System.Data.SqlClient.sni/4.7.0": {
       "type": "package",
       "serviceable": true,
@@ -197,6 +240,13 @@
       "sha512": "sha512-YhEdSQUsTx+C8m8Bw7ar5/VesXvCFMItyZF7G1AUY+OM0VPZUOeAVpJ4Wl6fydBGUYZxojTDR3I6Bj/+BPkJNA==",
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
+    },
+    "SgmlReader/1.8.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-htnYaQvJ83HXKV36Y1NlVDQBU41aU2IV7AZtGI3vuxEUYXPuNidTSZWw9kHvyT1wNgnK3eGooSaS8GTOI4PLhA==",
+      "path": "sgmlreader/1.8.11",
+      "hashPath": "sgmlreader.1.8.11.nupkg.sha512"
     },
     "System.Data.SqlClient/4.8.5": {
       "type": "package",

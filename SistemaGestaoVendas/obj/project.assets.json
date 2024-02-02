@@ -89,6 +89,31 @@
           }
         }
       },
+      "OFXParser/1.0.6": {
+        "type": "package",
+        "compile": {
+          "lib/net48/OFXParser.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net48/OFXParser.dll": {
+            "related": ".XML"
+          }
+        }
+      },
+      "OFXSharp/1.0.4002": {
+        "type": "package",
+        "dependencies": {
+          "SgmlReader": "1.8.11"
+        },
+        "compile": {
+          "lib/net35/OFXSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net35/OFXSharp.dll": {}
+        }
+      },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -122,6 +147,15 @@
             "assetType": "native",
             "rid": "win-x86"
           }
+        }
+      },
+      "SgmlReader/1.8.11": {
+        "type": "package",
+        "compile": {
+          "lib/4.0/SgmlReaderDll.dll": {}
+        },
+        "runtime": {
+          "lib/4.0/SgmlReaderDll.dll": {}
         }
       },
       "System.Data.SqlClient/4.8.5": {
@@ -400,6 +434,31 @@
         "packageIcon.png"
       ]
     },
+    "OFXParser/1.0.6": {
+      "sha512": "d8T0UCIX0teGaGGXWuMLOujrmQBF0vJbscZ7d97RqdRCSNCgHKT191QC2Mu9eLAkXLlT5XC2zBYj0KbGfvSTlA==",
+      "type": "package",
+      "path": "ofxparser/1.0.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net48/OFXParser.XML",
+        "lib/net48/OFXParser.dll",
+        "ofxparser.1.0.6.nupkg.sha512",
+        "ofxparser.nuspec"
+      ]
+    },
+    "OFXSharp/1.0.4002": {
+      "sha512": "6vnG6qWodNS663swkWI9cX1mVbW4UwWyVf9vY37TwkgBYkTy/PiSl5j9wTKtqlx16fIA2dXFrdjURJGEtJRgpw==",
+      "type": "package",
+      "path": "ofxsharp/1.0.4002",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/OFXSharp.dll",
+        "ofxsharp.1.0.4002.nupkg.sha512",
+        "ofxsharp.nuspec"
+      ]
+    },
     "runtime.native.System.Data.SqlClient.sni/4.7.0": {
       "sha512": "9kyFSIdN3T0qjDQ2R0HRXYIhS3l5psBzQi6qqhdLz+SzFyEy4sVxNOke+yyYv8Cu8rPER12c3RDjLT8wF3WBYQ==",
       "type": "package",
@@ -461,6 +520,19 @@
         "runtimes/win-x86/native/sni.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "SgmlReader/1.8.11": {
+      "sha512": "htnYaQvJ83HXKV36Y1NlVDQBU41aU2IV7AZtGI3vuxEUYXPuNidTSZWw9kHvyT1wNgnK3eGooSaS8GTOI4PLhA==",
+      "type": "package",
+      "path": "sgmlreader/1.8.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/2.0/SgmlReaderDll.dll",
+        "lib/4.0/SgmlReaderDll.dll",
+        "sgmlreader.1.8.11.nupkg.sha512",
+        "sgmlreader.nuspec"
       ]
     },
     "System.Data.SqlClient/4.8.5": {
@@ -655,6 +727,8 @@
       "AutoMapper >= 12.0.1",
       "Dapper >= 2.1.28",
       "Newtonsoft.Json >= 13.0.3",
+      "OFXParser >= 1.0.6",
+      "OFXSharp >= 1.0.4002",
       "System.Data.SqlClient >= 4.8.5"
     ]
   },
@@ -715,6 +789,14 @@
             "target": "Package",
             "version": "[13.0.3, )"
           },
+          "OFXParser": {
+            "target": "Package",
+            "version": "[1.0.6, )"
+          },
+          "OFXSharp": {
+            "target": "Package",
+            "version": "[1.0.4002, )"
+          },
           "System.Data.SqlClient": {
             "target": "Package",
             "version": "[4.8.5, )"
@@ -750,6 +832,36 @@
       "warningLevel": 1,
       "message": "Package 'System.Data.SqlClient' 4.8.5 has a known high severity vulnerability, https://github.com/advisories/GHSA-98g6-xh36-x2p7",
       "libraryId": "System.Data.SqlClient",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'OFXParser 1.0.6' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "libraryId": "OFXParser",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'OFXSharp 1.0.4002' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "libraryId": "OFXSharp",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'SgmlReader 1.8.11' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "libraryId": "SgmlReader",
       "targetGraphs": [
         "net8.0"
       ]

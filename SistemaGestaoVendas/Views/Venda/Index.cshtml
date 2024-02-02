@@ -1,5 +1,89 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿<div id="modal">
+    <!-- Lista de Produtos -->
+    <ul id="lista-produtos">
+        <!-- Itens da lista de produtos vão aqui -->
+    </ul>
+
+    <!-- Botão de Registrar Venda -->
+    <button id="registrar-venda">Registrar Venda</button>
+</div>
+
+<script>
+    // Evento ao clicar no botão Registrar Venda
+    $('#registrar-venda').on('click', function () {
+        // Obter dados da venda e itens selecionados
+        var vendaData = {
+            // Dados da venda, como ID do cliente, etc.
+        };
+
+        var itensVenda = [];
+        $('#lista-produtos li').each(function () {
+            var produtoId = $(this).data('produto-id');
+            var qtdeProduto = $(this).find('.qtde-produto').val();
+            var precoProduto = $(this).data('preco');
+
+            itensVenda.push({
+                produto_id: produtoId,
+                qtde_produto: qtdeProduto,
+                preco_produto: precoProduto
+            });
+        });
+
+        // Enviar dados da venda para o servidor
+        $.ajax({
+            url: '/registrar-venda',
+            method: 'POST',
+            data: {
+                venda: vendaData,
+                itens_venda: itensVenda
+            },
+            success: function (response) {
+                // Lidar com a resposta do servidor
+                console.log(response);
+            },
+            error: function (err) {
+                console.error('Erro ao registrar venda:', err);
+            }
+        });
+    });
+</script>
+
+@* <form asp-action="Index">
+    <div class="container">
+        <div class="row">
+            <span>Registrar uma Venda</span>
+            <hr />
+
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="data">Data</label>
+                    <input type="text" class="form-control" name="data" placeholder="Data">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="total">Total</label>
+                    <input type="text" class="form-control" name="total" placeholder="Total">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="Favorecido">Favorecido</label>
+                    <input type="text" class="form-control" name="Favorecido" placeholder="Favorecido">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="Favorecido">Favorecido</label>
+                    <input type="text" class="form-control" name="Favorecido" placeholder="Favorecido">
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-12">
+                <button type="submit" class="btn btn-primary">Salvar</button>
+            </div>
+        </div>
+    </div>
+</form> *@

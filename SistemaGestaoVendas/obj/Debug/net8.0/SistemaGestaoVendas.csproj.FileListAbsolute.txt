@@ -1,3 +1,4 @@
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.dll
 C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\web.config
 C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\appsettings.json
@@ -6,11 +7,12 @@ C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8
 C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.exe
 C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.deps.json
 C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.runtimeconfig.json
-C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.dll
-C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.pdb
 C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\AutoMapper.dll
 C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\Dapper.dll
 C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\OFXParser.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\OFXSharp.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\SgmlReaderDll.dll
 C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\System.Data.SqlClient.dll
 C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
 C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
@@ -41,4 +43,5 @@ C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8
 C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\refint\SistemaGestaoVendas.dll
 C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.pdb
 C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.genruntimeconfig.cache
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.pdb
 C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\ref\SistemaGestaoVendas.dll

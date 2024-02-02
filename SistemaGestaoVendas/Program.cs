@@ -5,6 +5,7 @@ using SistemaGestaoVendas.Repository;
 using AutoMapper;
 using SistemaGestaoVendas.Models.ContasAReceberrs;
 using SistemaGestaoVendas.Models.ContasAPagarrs;
+using SistemaGestaoVendas.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +18,8 @@ builder.Services.AddScoped<ICliente, ClienteRepository>();
 builder.Services.AddScoped<ILogin, LoginRepository>();
 builder.Services.AddScoped<IContasAReceber, ContasAReceberRepository>();
 builder.Services.AddScoped<IContasAPagar, ContasAPagarRepository>();
+builder.Services.AddScoped<IConciliacaoContas, OfxTransactionRepository>();
+
 
 builder.Services.AddMvc();
 builder.Services.AddSession();
