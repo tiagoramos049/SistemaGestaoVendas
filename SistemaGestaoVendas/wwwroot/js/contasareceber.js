@@ -15,7 +15,7 @@
             {
                 name: 'acoes',
                 index: 'acoes',
-                width: 90,
+                width: 120,
                 sortable: false,
                 formatter: function (cellvalue, options, rowObject) {
                     var editIcon, deleteIcon;
@@ -27,7 +27,7 @@
                     } else {
                         editIcon = '<span class="icon-edit" title="Editar" onclick="editarRegistro(' + rowObject.id + ')">&#9998;&nbsp;&nbsp;</span>';
                         deleteIcon = '<span class="icon-delete" title="Excluir" onclick="excluirRegistro(' + rowObject.id + ')">&#128465;&nbsp;&nbsp;</span>';
-                        var baixarIcon = '<span class="icon-baixar" title="Baixar" onclick="baixarConta(' + rowObject.id + ')">&#128179;&nbsp;&nbsp;</span>';
+                        var baixarIcon = '<button class="btn btn-success" title="Baixar" onclick="baixarConta(' + rowObject.id + ')"><i class="fa fa-download"></i></button>';
                         return editIcon + deleteIcon + baixarIcon;
                     }
                 }

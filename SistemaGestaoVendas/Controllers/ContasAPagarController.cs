@@ -34,6 +34,30 @@ namespace SistemaGestaoVendas.Controllers
                 return Json(new { success = false, message = ex.Message });
             }
         }
+        [HttpPost]
+        public IActionResult BaixarConta(int id)
+        {
+            try
+            {
+                var conta = _contasAPagarRepository.GetById(id);
+                if (conta != null)
+                {
+                    conta.BaixarConta = true; // Marcar a conta como baixada
+                    _contasAPagarRepository.Update(conta); // Atualizar a conta no banco de dados
+
+                    // Retorna o ID da conta baixada e os dados atualizados da linha
+                    return Json(new { success = true, message = "Conta a Pagar baixada com sucesso.", contasAPagarId = id, rowData = conta });
+                }
+                else
+                {
+                    return Json(new { success = false, message = "Conta não encontrada." });
+                }
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = ex.Message });
+            }
+        }
         public IActionResult GridData(int page, int rows, string sidx, string sord)
         {
             var contasAPagars = _contasAPagarRepository.GetAll();
@@ -54,6 +78,7 @@ namespace SistemaGestaoVendas.Controllers
                 valor = (decimal)p.Valor,
                 formaPagamento = p.FormaPagamento,
                 banco = p.Banco,
+                contaBaixada = p.BaixarConta
             });
 
             return Json(new

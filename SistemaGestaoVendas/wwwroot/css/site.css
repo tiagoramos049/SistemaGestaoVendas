@@ -44,6 +44,10 @@ span.icon-delete {
     height: calc(100% - 73px);
 }
 
+.icon-verde {
+    color: green; /* Defina a cor verde desejada */
+}
+
 .disabled-icon {
     color: #999; /* Defina a cor desejada para os ícones desativados */
 }

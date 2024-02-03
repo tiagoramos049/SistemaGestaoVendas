@@ -15,13 +15,21 @@
             {
                 name: 'acoes',
                 index: 'acoes',
-                width: 90,
+                width: 120,
                 sortable: false,
                 formatter: function (cellvalue, options, rowObject) {
-                    var editIcon = '<span class="icon-edit" title="Editar" onclick="editarRegistro(' + rowObject.id + ')">&#9998;&nbsp;&nbsp;</span>';
-                    var deleteIcon = '<span class="icon-delete" title="Excluir" onclick="excluirRegistro(' + rowObject.id + ')">&#128465;&nbsp;&nbsp</span>';
-                    var baixarIcon = '<span class="icon-baixar" title="Baixar" onclick="baixarConta(' + rowObject.id + ')">&#128179;&nbsp;&nbsp</span>';
-                    return editIcon + deleteIcon + baixarIcon;
+                    var editIcon, deleteIcon;
+                    if (rowObject.contaBaixada) {
+                        var baixadoIcon = '<span class="icon-baixado" title="Conta Baixada">&#10003;&nbsp;&nbsp;</span>';
+                        editIcon = '<span class="icon-edit disabled-icon" title="Editar">&#9998;&nbsp;&nbsp;</span>';
+                        deleteIcon = '<span class="icon-delete disabled-icon" title="Excluir">&#128465;&nbsp;&nbsp;</span>';
+                        return editIcon + deleteIcon + baixadoIcon;
+                    } else {
+                        editIcon = '<span class="icon-edit" title="Editar" onclick="editarRegistro(' + rowObject.id + ')">&#9998;&nbsp;&nbsp;</span>';
+                        deleteIcon = '<span class="icon-delete" title="Excluir" onclick="excluirRegistro(' + rowObject.id + ')">&#128465;&nbsp;&nbsp;</span>';
+                        var baixarIcon = '<button class="btn btn-success" title="Baixar" onclick="baixarConta(' + rowObject.id + ')"><i class="fa fa-download"></i></button>';
+                        return editIcon + deleteIcon + baixarIcon;
+                    }
                 }
             },
             { name: 'dataEmissao', index: 'dataEmissao', width: 250 },
@@ -146,10 +154,24 @@ function carregarDadosGrid() {
 }
 
 function baixarConta(contasAPagarId) {
-    // Aqui você marcará a conta como baixada (por exemplo, enviando uma solicitação para o servidor ou atualizando o estado no cliente)
-
-    // Após a marcação da conta como baixada, você pode adicionar essa conta à tela de conciliação bancária.
-    // Suponha que você tenha uma função chamada "adicionarConciliacaoBancaria" que aceite os detalhes da conta baixada.
-    var contaBaixada = buscarContaPorId(contasAPagarId); // Esta função buscará os detalhes da conta com base no ID
-    adicionarConciliacaoBancaria(contaBaixada); // Adicionando à tela de conciliação bancária
+    $.ajax({
+        url: '/ContasAPagar/BaixarConta', // Rota para a action que baixa a conta
+        type: 'POST',
+        data: { id: contasAPagarId }, // Envia o ID da conta a receber
+        success: function (response) {
+            if (response.success) {
+                alert('Conta baixada com sucesso.');
+                // Atualizar a interface para refletir que a conta foi baixada
+                var rowId = response.contasAPagarId; // Obtém o ID da conta baixada da resposta
+                var rowData = response.rowData; // Obtém os dados atualizados da linha
+                $("#jqGridContasAPagar").jqGrid('setRowData', rowId, rowData);
+            } else {
+                alert('Erro ao baixar conta: ' + response.message);
+            }
+            carregarDadosGrid();
+        },
+        error: function (error) {
+            console.error('Erro ao baixar conta: ' + error.responseText);
+        }
+    });
 }
