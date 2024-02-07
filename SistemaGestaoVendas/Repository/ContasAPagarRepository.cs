@@ -24,7 +24,17 @@ namespace SistemaGestaoVendas.Repository
                 return dbConnection.Query<ContasAPagar>("SELECT * FROM ContasAPagar");
             }
         }
-        
+
+        public IEnumerable<ContasAPagar> GetAnyTrue()
+        {
+            using (IDbConnection dbConnection = _dao.Connection)
+            {
+                dbConnection.Open();
+                return dbConnection.Query<ContasAPagar>("SELECT * FROM ContasAPagar WHERE BAIXARCONTA = 1");
+            }
+        }
+
+
         public ContasAPagar GetById(int id)
         {
             using (IDbConnection dbConnection = _dao.Connection)

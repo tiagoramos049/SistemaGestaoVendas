@@ -21,9 +21,10 @@
                     var editIcon, deleteIcon;
                     if (rowObject.contaBaixada) {
                         var baixadoIcon = '<span class="icon-baixado" title="Conta Baixada">&#10003;&nbsp;&nbsp;</span>';
+                        var voltarIcon = '<span class="icon-voltar" title="Reabrir Conta" onclick="reabrirConta(' + rowObject.id + ')">&nbsp;&nbsp;&#xd7;</span>';
                         editIcon = '<span class="icon-edit disabled-icon" title="Editar">&#9998;&nbsp;&nbsp;</span>';
                         deleteIcon = '<span class="icon-delete disabled-icon" title="Excluir">&#128465;&nbsp;&nbsp;</span>';
-                        return editIcon + deleteIcon + baixadoIcon;
+                        return editIcon + deleteIcon + baixadoIcon + voltarIcon;
                     } else {
                         editIcon = '<span class="icon-edit" title="Editar" onclick="editarRegistro(' + rowObject.id + ')">&#9998;&nbsp;&nbsp;</span>';
                         deleteIcon = '<span class="icon-delete" title="Excluir" onclick="excluirRegistro(' + rowObject.id + ')">&#128465;&nbsp;&nbsp;</span>';
@@ -172,3 +173,28 @@ function baixarConta(contasAReceberId) {
         }
     });
 }
+
+
+function reabrirConta(contasAReceberId) {
+    $.ajax({
+        url: '/ContasAReceber/ReabrirConta', // Rota para a action que baixa a conta
+        type: 'POST',
+        data: { id: contasAReceberId }, // Envia o ID da conta a receber
+        success: function (response) {
+            if (response.success) {
+                alert('Conta reaberta.');
+                // Atualizar a interface para refletir que a conta foi baixada
+                var rowId = response.contasAReceberId; // Suponha que sua resposta contenha o ID da conta baixada
+                var rowData = response.rowData; // Suponha que sua resposta contenha os dados atualizados da linha
+                $("#jqGridContasAReceber").jqGrid('setRowData', rowId, rowData);
+            } else {
+                alert('Erro ao baixar conta: ' + response.message);
+            }
+            carregarDadosGrid();
+        },
+        error: function (error) {
+            console.error('Erro ao baixar conta: ' + error.responseText);
+        }
+    });
+}
+

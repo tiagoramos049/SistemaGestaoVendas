@@ -46,7 +46,7 @@
                             <a class="nav-link text-white" asp-area="" asp-controller="ContasAReceber" asp-action="Index">Contas a Receber</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="ConciliacaoContas" asp-action="ConciliacaoContas">Conciliacao</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="ConciliacaoContas" asp-action="ConciliacaoContas">Ajuste Conciliação</a>
                         </li>
                         <li class="nav-item dropdown">
                             <div class="dropdown">
@@ -54,6 +54,7 @@
                                     Relatórios
                                 </a>
                                 <ul class="dropdown-menu">
+                                    <a class="dropdown-item" asp-area="" asp-controller="ConciliacaoContas" asp-action="GerarRelatorioConciliacao">Conciliação</a>
                                     <a class="dropdown-item" asp-area="" asp-controller="Relatorios" asp-action="Item1">Comissão</a>
                                     <a class="dropdown-item" asp-area="" asp-controller="Relatorios" asp-action="Item2">Vendas</a>
                                     <a class="dropdown-item" asp-area="" asp-controller="Relatorios" asp-action="Item3">Cadastros Recentes</a>

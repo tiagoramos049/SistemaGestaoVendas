@@ -9,6 +9,7 @@
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="Dapper" Version="2.1.28" />
+    <PackageReference Include="itext7" Version="7.1.15" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="OFXParser" Version="1.0.6" />
 	  <PackageReference Include="OFXParser" Version="x.y.z" />

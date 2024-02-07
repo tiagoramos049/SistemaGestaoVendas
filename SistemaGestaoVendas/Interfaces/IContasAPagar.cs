@@ -6,6 +6,7 @@ namespace SistemaGestaoVendas.Interfaces
     public interface IContasAPagar
     {
         public IEnumerable<ContasAPagar> GetAll();
+        public IEnumerable<ContasAPagar> GetAnyTrue();
         public ContasAPagar GetById(int id);
         public void Insert(ContasAPagar contasAPagar);
         public void Update(ContasAPagar contasAPagar);

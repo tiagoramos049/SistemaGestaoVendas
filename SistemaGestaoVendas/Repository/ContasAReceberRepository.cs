@@ -22,6 +22,14 @@ namespace SistemaGestaoVendas.Repository
                 return dbConnection.Query<ContasAReceber>("SELECT * FROM ContasAReceber");
             }
         }
+        public IEnumerable<ContasAReceber> GetAnyTrue()
+        {
+            using (IDbConnection dbConnection = _dao.Connection)
+            {
+                dbConnection.Open();
+                return dbConnection.Query<ContasAReceber>("SELECT * FROM ContasAReceber WHERE BAIXARCONTA = 1");
+            }
+        }
 
         public ContasAReceber GetById(int id)
         {

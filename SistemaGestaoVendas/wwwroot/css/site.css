@@ -48,6 +48,11 @@ span.icon-delete {
     color: green; /* Defina a cor verde desejada */
 }
 
+.icon-borda {
+    color: red;
+    border: 5px;
+}
+
 .disabled-icon {
     color: #999; /* Defina a cor desejada para os ícones desativados */
 }

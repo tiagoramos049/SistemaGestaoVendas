@@ -68,6 +68,10 @@
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.5, )"
+            },
+            "itext7": {
+              "target": "Package",
+              "version": "[7.1.15, )"
             }
           },
           "imports": [

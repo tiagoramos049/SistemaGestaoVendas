@@ -55,6 +55,30 @@ namespace SistemaGestaoVendas.Controllers
                 return Json(new { success = false, message = ex.Message });
             }
         }
+        [HttpPost]
+        public IActionResult ReabrirConta(int id)
+        {
+            try
+            {
+                var conta = _contasAReceberRepository.GetById(id);
+                if (conta != null)
+                {
+                    conta.BaixarConta = false; // Marcar a conta como aberta
+                    _contasAReceberRepository.Update(conta); // Atualizar a conta no banco de dados
+
+                    return Json(new { success = true, message = "Conta reaberta." });
+                }
+                else
+                {
+                    return Json(new { success = false, message = "Conta não encontrada." });
+                }
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = ex.Message });
+            }
+        }
+        
         public IActionResult GridData(int page, int rows, string sidx, string sord)
         {
             var contasAReceber = _contasAReceberRepository.GetAll(); // Obter todas as contas a receber
