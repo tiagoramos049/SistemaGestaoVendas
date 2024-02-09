@@ -103,8 +103,16 @@ namespace SistemaGestaoVendas.Controllers
                 valor = (decimal)p.Valor,
                 formaPagamento = p.FormaPagamento,
                 banco = p.Banco,
-                contaBaixada = p.BaixarConta
-            });
+                contaBaixada = p.BaixarConta,
+                centroDeCusto = p.CentroDeCusto,
+                categoria = p.Categoria,
+                projeto = p.Projeto,
+                numeroNotaFiscal = p.NumeroNotaFiscal,
+                valorPagoNotaFiscal = p.ValorPagoNotaFiscal,
+                jurosMulta = p.JurosMulta,
+                desconto = p.Desconto,
+                codigoBarra = p.CodigoBarra,
+    });
 
             return Json(new
             {
@@ -149,6 +157,14 @@ namespace SistemaGestaoVendas.Controllers
                     valor = contasAPagar.Valor,
                     formaPagamento = contasAPagar.FormaPagamento,
                     banco = contasAPagar.Banco,
+                    centroDeCusto = contasAPagar.CentroDeCusto,
+                    categoria = contasAPagar.Categoria,
+                    projeto = contasAPagar.Projeto,
+                    numeroNotaFiscal = contasAPagar.NumeroNotaFiscal,
+                    valorPagoNotaFiscal = contasAPagar.ValorPagoNotaFiscal,
+                    jurosMulta = contasAPagar.JurosMulta,
+                    desconto = contasAPagar.Desconto,
+                    codigoBarra = contasAPagar.CodigoBarra,
 
                 });
             }
@@ -159,7 +175,7 @@ namespace SistemaGestaoVendas.Controllers
         }
 
         [HttpPost]
-        public IActionResult Update(int id, DateTime campo2, DateTime campo3, string campo4, decimal campo5, string campo6, string campo7)
+        public IActionResult Update(int id, DateTime campo2, DateTime campo3, string campo4, decimal campo5, string campo6, string campo7, string campo8, string campo9, string campo10, string campo11, decimal campo12, decimal campo13, decimal campo14, string campo15)
         {
             try
             {
@@ -176,6 +192,14 @@ namespace SistemaGestaoVendas.Controllers
                 contasAPagar.Valor = campo5;
                 contasAPagar.FormaPagamento = campo6;
                 contasAPagar.Banco = campo7;
+                contasAPagar.CentroDeCusto = campo8;
+                contasAPagar.Categoria = campo9;
+                contasAPagar.Projeto = campo10;
+                contasAPagar.NumeroNotaFiscal = campo11;
+                contasAPagar.ValorPagoNotaFiscal = campo12;
+                contasAPagar.JurosMulta = campo13;
+                contasAPagar.Desconto = campo14;
+                contasAPagar.CodigoBarra = campo15;
 
                 _contasAPagarRepository.Update(contasAPagar);
 

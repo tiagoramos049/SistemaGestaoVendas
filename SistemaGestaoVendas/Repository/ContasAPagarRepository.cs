@@ -49,7 +49,7 @@ namespace SistemaGestaoVendas.Repository
             using (IDbConnection dbConnection = _dao.Connection)
             {
                 dbConnection.Open();
-                dbConnection.Execute("INSERT INTO ContasAPagar (DataEmissao, DataVencimento, Favorecido, Valor, FormaPagamento, Banco) VALUES (@DataEmissao, @DataVencimento, @Favorecido, @Valor, @FormaPagamento, @Banco)", contasAPagar);
+                dbConnection.Execute("INSERT INTO ContasAPagar (DataEmissao, DataVencimento, Favorecido, Valor, FormaPagamento, Banco, CentroDeCusto, Categoria, Projeto, NumeroNotaFiscal, ValorPagoNotaFiscal, JurosMulta, Desconto, CodigoBarra) VALUES (@DataEmissao, @DataVencimento, @Favorecido, @Valor, @FormaPagamento, @Banco, @CentroDeCusto, @Categoria, @Projeto, @NumeroNotaFiscal, @ValorPagoNotaFiscal, @JurosMulta, @Desconto, @CodigoBarra)", contasAPagar);
             }
         }
 
@@ -58,7 +58,7 @@ namespace SistemaGestaoVendas.Repository
             using (IDbConnection dbConnection = _dao.Connection)
             {
                 dbConnection.Open();
-                dbConnection.Execute("UPDATE ContasAPagar SET DataEmissao = @DataEmissao, DataVencimento = @DataVencimento, Favorecido = @Favorecido, Valor = @Valor, FormaPagamento = @FormaPagamento, Banco = @Banco, BaixarConta = @BaixarConta WHERE id = @Id", contasAPagar);
+                dbConnection.Execute("UPDATE ContasAPagar SET DataEmissao = @DataEmissao, DataVencimento = @DataVencimento, Favorecido = @Favorecido, Valor = @Valor, FormaPagamento = @FormaPagamento, Banco = @Banco, BaixarConta = @BaixarConta, CentroDeCusto = @CentroDeCusto, Categoria = @Categoria, Projeto = @Projeto, NumeroNotaFiscal = @NumeroNotaFiscal, ValorPagoNotaFiscal = @ValorPagoNotaFiscal, JurosMulta = @JurosMulta, Desconto = @Desconto, CodigoBarra = @CodigoBarra WHERE id = @Id", contasAPagar);
             }
         }
         public void Delete(int id)

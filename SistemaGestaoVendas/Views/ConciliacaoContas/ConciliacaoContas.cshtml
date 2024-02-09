@@ -10,13 +10,19 @@
     <button type="submit" class="btn btn-primary">Importar Extrato</button>
 </form>
 <br />
+@{
+    decimal totalContasAPagar = 0;
+    decimal totalContasAReceber = 0;
+    decimal totalGeral = 0;
+}
+
 <table class="table table-bordered">
     <tr>
         <th>Saldo Pagar/Receber</th>
-        <th>OFX Importado</th>
+        @* <th>OFX Importado</th> *@
     </tr>
     @{
-        int maxIterations = Math.Max(Math.Max(Model.ContasAPagar.Count(), Model.ContasAReceber.Count()), Model.Ofx.Count());
+        int maxIterations = Math.Max(Model.ContasAPagar.Count(), Model.ContasAReceber.Count());
         for (int i = 0; i < maxIterations; i++)
         {
             <tr>
@@ -25,24 +31,24 @@
                     {
                         var contaPagar = Model.ContasAPagar.ElementAt(i);
                         <span style="color: red;">@contaPagar.DataEmissao.ToString("dd/MM/yyyy") @contaPagar.Valor</span> @contaPagar.Favorecido <br />
-                        
+                        totalContasAPagar += contaPagar.Valor;
                     }
 
                     @if (i < Model.ContasAReceber.Count())
                     {
                         var contaReceber = Model.ContasAReceber.ElementAt(i);
                         <span style="color: green;">@contaReceber.DataEmissao.ToString("dd/MM/yyyy") @contaReceber.Valor</span> @contaReceber.Favorecido <br />
-                    }
-                </td>
-                <td>
-                    @if (i < Model.Ofx.Count())
-                    {
-                        var ofx = Model.Ofx.ElementAt(i);
-                        <span>@ofx.DATA</span> @ofx.TRNAMT <span>@ofx.MEMO</span> <br />
+                        totalContasAReceber += contaReceber.Valor;
                     }
                 </td>
             </tr>
         }
     }
+    <tr>
+        <td>
+            Total Contas a Pagar: @totalContasAPagar <br />
+            Total Contas a Receber: @totalContasAReceber <br />
+            Total Geral: @(totalContasAPagar + totalContasAReceber) <br />
+        </td>
+    </tr>
 </table>
-

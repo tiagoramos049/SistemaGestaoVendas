@@ -10,7 +10,7 @@
         url: '/ContasAPagar/GridData',
         datatype: 'json',
         mtype: 'GET',
-        colNames: ['Ações', 'Data Emissão', 'Data Vencimento', 'Favorecido', 'Valor', 'Forma Pagamento','Banco'],
+        colNames: ['Ações', 'Data Emissão', 'Data Vencimento', 'Favorecido', 'Valor', 'Forma Pagamento', 'Banco', 'Centro De Custo', 'Categoria', 'Projeto', 'Numero Nota Fiscal', 'Valor Pago Nota Fiscal', 'Juros/Multa', 'Desconto','Código de Barra'],
         colModel: [
             {
                 name: 'acoes',
@@ -28,17 +28,51 @@
                     } else {
                         editIcon = '<span class="icon-edit" title="Editar" onclick="editarRegistro(' + rowObject.id + ')">&#9998;&nbsp;&nbsp;</span>';
                         deleteIcon = '<span class="icon-delete" title="Excluir" onclick="excluirRegistro(' + rowObject.id + ')">&#128465;&nbsp;&nbsp;</span>';
-                        var baixarIcon = '<button class="btn btn-success" title="Baixar" onclick="baixarConta(' + rowObject.id + ')"><i class="fa fa-download"></i></button>';
+                        var baixarIcon = '<button class="btn btn-success" title="Baixar" onclick="baixarConta(' + rowObject.id + ')"><span class="icon-redondo-verde">&#10003;</span></button>';
                         return editIcon + deleteIcon + baixarIcon;
                     }
                 }
             },
-            { name: 'dataEmissao', index: 'dataEmissao', width: 250 },
-            { name: 'dataVencimento', index: 'dataVencimento', width: 250 },
+            {
+                name: 'dataEmissao',
+                index: 'dataEmissao',
+                width: 100,
+                formatter: 'date',
+                formatoptions: {
+                    srcformat: 'Y-m-d',
+                    newformat: 'd/m/Y'
+                }
+            },
+            {
+                name: 'dataVencimento',
+                index: 'dataVencimento',
+                width: 100,
+                formatter: 'date',
+                formatoptions: {
+                    srcformat: 'Y-m-d',
+                    newformat: 'd/m/Y'
+                }
+            },
             { name: 'favorecido', index: 'favorecido', width: 100 },
-            { name: 'valor', index: 'valor', width: 100 },
-            { name: 'formaPagamento', index: 'formaPagamento', width: 150 },
-            { name: 'banco', index: 'banco', width: 150 },
+            {
+                name: 'valor',
+                index: 'valor',
+                width: 70,
+                formatter: 'currency',
+                formatoptions: { prefix: 'R$ ', thousandsSeparator: '.', decimalPlaces: 2 }
+            },
+            { name: 'formaPagamento', index: 'formaPagamento', width: 100 },
+            { name: 'banco', index: 'banco', width: 60 },
+
+            { name: 'centroDeCusto', index: 'centroDeCusto', width: 70 },
+            { name: 'categoria', index: 'categoria', width: 50 },
+            { name: 'projeto', index: 'projeto', width: 50 },
+            { name: 'numeroNotaFiscal', index: 'numeroNotaFiscal', width: 50 },
+            { name: 'valorPagoNotaFiscal', index: 'valorPagoNotaFiscal', width: 80 },
+            { name: 'jurosMulta', index: 'jurosMulta', width: 50 },
+            { name: 'desconto', index: 'desconto', width: 50 },
+            { name: 'codigoBarra', index: 'codigoBarra', width: 50 },
+
         ],
 
         pager: jQuery('#jqGridPager'),

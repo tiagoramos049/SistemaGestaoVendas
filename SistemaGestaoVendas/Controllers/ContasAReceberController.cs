@@ -99,7 +99,15 @@ namespace SistemaGestaoVendas.Controllers
                 valor = (decimal)p.Valor,
                 formaPagamento = p.FormaPagamento,
                 banco = p.Banco,
-                contaBaixada = p.BaixarConta // Certifique-se de incluir a propriedade contaBaixada
+                contaBaixada = p.BaixarConta,
+                centroDeCusto = p.CentroDeCusto,
+                categoria = p.Categoria,
+                projeto = p.Projeto,
+                numeroNotaFiscal = p.NumeroNotaFiscal,
+                valorPagoNotaFiscal = p.ValorPagoNotaFiscal,
+                jurosMulta = p.JurosMulta,
+                desconto = p.Desconto,
+                codigoBarra = p.CodigoBarra,
             });
 
             return Json(new
@@ -144,7 +152,15 @@ namespace SistemaGestaoVendas.Controllers
                     favorecido = contasAReceber.Favorecido,
                     valor = contasAReceber.Valor,
                     formaPagamento = contasAReceber.FormaPagamento,
-                    banco = contasAReceber.Banco
+                    banco = contasAReceber.Banco,
+                    centroDeCusto = contasAReceber.CentroDeCusto,
+                    categoria = contasAReceber.Categoria,
+                    projeto = contasAReceber.Projeto,
+                    numeroNotaFiscal = contasAReceber.NumeroNotaFiscal,
+                    valorPagoNotaFiscal = contasAReceber.ValorPagoNotaFiscal,
+                    jurosMulta = contasAReceber.JurosMulta,
+                    desconto = contasAReceber.Desconto,
+                    codigoBarra = contasAReceber.CodigoBarra,
 
                 });
             }
@@ -155,7 +171,7 @@ namespace SistemaGestaoVendas.Controllers
         }
 
         [HttpPost]
-        public IActionResult Update(int id, DateTime campo2, DateTime campo3, string campo4, decimal campo5, string campo6, string campo7)
+        public IActionResult Update(int id, DateTime campo2, DateTime campo3, string campo4, decimal campo5, string campo6, string campo7, string campo8, string campo9, string campo10, string campo11, decimal campo12, decimal campo13, decimal campo14, string campo15)
         {
             try
             {
@@ -172,6 +188,14 @@ namespace SistemaGestaoVendas.Controllers
                 contasAReceber.Valor = campo5;
                 contasAReceber.FormaPagamento = campo6;
                 contasAReceber.Banco = campo7;
+                contasAReceber.CentroDeCusto = campo8;
+                contasAReceber.Categoria = campo9;
+                contasAReceber.Projeto = campo10;
+                contasAReceber.NumeroNotaFiscal = campo11;
+                contasAReceber.ValorPagoNotaFiscal = campo12;
+                contasAReceber.JurosMulta = campo13;
+                contasAReceber.Desconto = campo14;
+                contasAReceber.CodigoBarra = campo15;
 
                 _contasAReceberRepository.Update(contasAReceber);
 
