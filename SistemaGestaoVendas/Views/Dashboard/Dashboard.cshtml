@@ -1,6 +1,6 @@
 ﻿<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-<canvas id="myChart" width="400" height="400"></canvas>
+<canvas id="myChart" width="200" height="200"></canvas>
 
 @{
     // Obtenha os valores das contas a pagar e a receber
@@ -10,8 +10,8 @@
 
 <script>
     // Converta os valores para números, se necessário
-    var valorContasAPagar = parseFloat('@valorContasAPagar');
-    var valorContasAReceber = parseFloat('@valorContasAReceber');
+    var valorContasAPagar = parseFloat('@ViewBag.ValorContasAPagar');
+    var valorContasAReceber = parseFloat('@ViewBag.ValorContasAReceber');
 
     // Verifique se os valores são números válidos
     if (!isNaN(valorContasAPagar) && !isNaN(valorContasAReceber)) {

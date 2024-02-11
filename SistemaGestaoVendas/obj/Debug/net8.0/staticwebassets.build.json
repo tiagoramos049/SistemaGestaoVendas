@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8HodmB1dyeDbcfd/PPdi0ks7/19yJg5eaqu7sPJeYNQ=",
+  "Hash": "/R7JUoWjf4pBPh4aMMS0TihH+P2vlplur1bQ0hvKav4=",
   "Source": "SistemaGestaoVendas",
   "BasePath": "_content/SistemaGestaoVendas",
   "Mode": "Default",
@@ -93,12 +93,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\SQi\\source\\repos\\SistemaGestaoVendas\\SistemaGestaoVendas\\wwwroot\\fotos\\sistemagestao.jpg",
+      "Identity": "C:\\Users\\SQi\\source\\repos\\SistemaGestaoVendas\\SistemaGestaoVendas\\wwwroot\\fotos\\sistemagestaoo.jpg",
       "SourceId": "SistemaGestaoVendas",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\SQi\\source\\repos\\SistemaGestaoVendas\\SistemaGestaoVendas\\wwwroot\\",
       "BasePath": "_content/SistemaGestaoVendas",
-      "RelativePath": "fotos/sistemagestao.jpg",
+      "RelativePath": "fotos/sistemagestaoo.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -109,7 +109,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\fotos\\sistemagestao.jpg"
+      "OriginalItemSpec": "wwwroot\\fotos\\sistemagestaoo.jpg"
     },
     {
       "Identity": "C:\\Users\\SQi\\source\\repos\\SistemaGestaoVendas\\SistemaGestaoVendas\\wwwroot\\js\\cliente.js",

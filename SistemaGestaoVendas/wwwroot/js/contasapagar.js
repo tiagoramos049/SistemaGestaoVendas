@@ -120,6 +120,35 @@ function editarRegistro(id) {
     });
 }
 
+function criarRegistro() {
+    $('#criarModal').modal('show');
+    $.ajax({
+        url: '/ContasAPagar/DetalhesConta', // Corrigido para chamar o método que retorna os detalhes da conta
+        type: 'GET',
+        success: function (data) {
+            if (data.success) {
+                $('#DataEmissao').val(data.dataEmissao);
+                $('#DataVencimento').val(data.dataVencimento);
+                $('#Favorecido').val(data.favorecido);
+                $('#Valor').val(data.valor);
+                $('#FormaPagamento').val(data.formaPagamento);
+                $('#Banco').val(data.banco);
+                $('#CentroDeCusto').val(data.centroDeCusto); // Corrigido o seletor
+                $('#Categoria').val(data.categoria); // Corrigido o seletor
+                $('#Projeto').val(data.projeto); // Corrigido o seletor
+                $('#NumeroNotaFiscal').val(data.numeroNotaFiscal); // Corrigido o seletor
+                $('#ValorPagoNotaFiscal').val(data.valorPagoNotaFiscal); // Corrigido o seletor
+                $('#JurosMulta').val(data.jurosMulta); // Corrigido o seletor
+                $('#Desconto').val(data.desconto); // Corrigido o seletor
+                $('#CodigoBarra').val(data.codigoBarra); // Corrigido o seletor
+            } 
+        },
+        error: function (xhr, status, error) {
+            console.error('Erro na requisição AJAX:', error);
+        }
+    });
+}
+
 function salvarEdicao() {
     $.ajax({
         url: '/ContasAPagar/Update',

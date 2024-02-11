@@ -117,6 +117,36 @@ function editarRegistro(id) {
     });
 }
 
+function crirRegistro() {
+    $('#criarModal').modal('show');
+    $.ajax({
+        url: '/ContasAReceber/DetalhesConta',
+        type: 'GET',
+        success: function (data) {
+            if (data.success) {
+                $('#DataEmissao').val(data.dataEmissao);
+                $('#DataVencimento').val(data.dataVencimento);
+                $('#Favorecido').val(data.favorecido);
+                $('#Valor').val(data.valor);
+                $('#FormaPagamento').val(data.formaPagamento);
+                $('#Banco').val(data.banco);
+                $('CentroDeCusto').val(data.centroDeCusto);
+                $('Categoria').val(data.categoria);
+                $('Projeto').val(data.projeto);
+                $('NumeroNotaFiscal').val(data.numeroNotaFiscal);
+                $('ValorPagoNotaFiscal').val(data.valorPagoNotaFiscal);
+                $('JurosMulta').val(data.jurosMulta);
+                $('Desconto').val(data.desconto);
+                $('CodigoBarra').val(data.codigoBarra);
+
+            }
+        },
+        error: function (xhr, status, error) {
+            console.error('Erro na requisição AJAX:', error);
+        }
+    });
+}
+
 function salvarEdicao() {
     $.ajax({
         url: '/ContasAReceber/Update',

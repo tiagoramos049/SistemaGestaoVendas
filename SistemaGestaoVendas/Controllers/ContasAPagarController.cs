@@ -14,10 +14,47 @@ namespace SistemaGestaoVendas.Controllers
         {
             _contasAPagarRepository = contasAPagarRepository;
         }
+        [HttpGet]
         public IActionResult Index()
         {
             var contasAPagar = _contasAPagarRepository.GetAll();
             return View(contasAPagar);
+        }
+
+        [HttpGet]
+        public IActionResult DetalhesConta(int id)
+        {
+            try
+            {
+                var conta = _contasAPagarRepository.GetById(id);
+                if (conta == null)
+                {
+                    return Json(new { success = false, message = "Conta não encontrada." });
+                }
+
+                return Json(new
+                {
+                    success = true,
+                    dataEmissao = conta.DataEmissao,
+                    dataVencimento = conta.DataVencimento,
+                    favorecido = conta.Favorecido,
+                    valor = conta.Valor,
+                    formaPagamento = conta.FormaPagamento,
+                    banco = conta.Banco,
+                    centroDeCusto = conta.CentroDeCusto,
+                    categoria = conta.Categoria,
+                    projeto = conta.Projeto,
+                    numeroNotaFiscal = conta.NumeroNotaFiscal,
+                    valorPagoNotaFiscal = conta.ValorPagoNotaFiscal,
+                    jurosMulta = conta.JurosMulta,
+                    desconto = conta.Desconto,
+                    codigoBarra = conta.CodigoBarra
+                });
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = ex.Message });
+            }
         }
 
         [HttpPost]
