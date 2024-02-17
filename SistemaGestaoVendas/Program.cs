@@ -20,6 +20,8 @@ builder.Services.AddScoped<IContasAReceber, ContasAReceberRepository>();
 builder.Services.AddScoped<IContasAPagar, ContasAPagarRepository>();
 builder.Services.AddScoped<IConciliacaoContas, OfxTransactionRepository>();
 builder.Services.AddScoped<DashboardRepository>();
+builder.Services.AddHttpClient();
+
 
 
 builder.Services.AddMvc();
