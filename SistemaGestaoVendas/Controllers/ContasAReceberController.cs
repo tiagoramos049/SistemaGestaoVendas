@@ -30,23 +30,23 @@ namespace SistemaGestaoVendas.Controllers
                     return Json(new { success = false, message = "Conta não encontrada." });
                 }
 
-                return Json(new
+                return Json(new ContasAReceber
                 {
-                    success = true,
-                    dataEmissao = conta.DataEmissao,
-                    dataVencimento = conta.DataVencimento,
-                    favorecido = conta.Favorecido,
-                    valor = conta.Valor,
-                    formaPagamento = conta.FormaPagamento,
-                    banco = conta.Banco,
-                    centroDeCusto = conta.CentroDeCusto,
-                    categoria = conta.Categoria,
-                    projeto = conta.Projeto,
-                    numeroNotaFiscal = conta.NumeroNotaFiscal,
-                    valorPagoNotaFiscal = conta.ValorPagoNotaFiscal,
-                    jurosMulta = conta.JurosMulta,
-                    desconto = conta.Desconto,
-                    codigoBarra = conta.CodigoBarra
+                    Success = conta.Success,
+                    DataEmissao = conta.DataEmissao,
+                    DataVencimento = conta.DataVencimento,
+                    Favorecido = conta.Favorecido,
+                    Valor = conta.Valor,
+                    FormaPagamento = conta.FormaPagamento,
+                    Banco = conta.Banco,
+                    CentroDeCusto = conta.CentroDeCusto,
+                    Categoria = conta.Categoria,
+                    Projeto = conta.Projeto,
+                    NumeroNotaFiscal = conta.NumeroNotaFiscal,
+                    ValorPagoNotaFiscal = conta.ValorPagoNotaFiscal,
+                    JurosMulta = conta.JurosMulta,
+                    Desconto = conta.Desconto,
+                    CodigoBarra = conta.CodigoBarra
                 });
             }
             catch (Exception ex)
@@ -77,8 +77,8 @@ namespace SistemaGestaoVendas.Controllers
                 var conta = _contasAReceberRepository.GetById(id);
                 if (conta != null)
                 {
-                    conta.BaixarConta = true; // Marcar a conta como baixada
-                    _contasAReceberRepository.Update(conta); // Atualizar a conta no banco de dados
+                    conta.BaixarConta = true; 
+                    _contasAReceberRepository.Update(conta);
 
                     return Json(new { success = true, message = "Conta baixada com sucesso." });
                 }
@@ -100,8 +100,8 @@ namespace SistemaGestaoVendas.Controllers
                 var conta = _contasAReceberRepository.GetById(id);
                 if (conta != null)
                 {
-                    conta.BaixarConta = false; // Marcar a conta como aberta
-                    _contasAReceberRepository.Update(conta); // Atualizar a conta no banco de dados
+                    conta.BaixarConta = false; 
+                    _contasAReceberRepository.Update(conta);
 
                     return Json(new { success = true, message = "Conta reaberta." });
                 }
@@ -118,9 +118,9 @@ namespace SistemaGestaoVendas.Controllers
         
         public IActionResult GridData(int page, int rows, string sidx, string sord)
         {
-            var contasAReceber = _contasAReceberRepository.GetAll(); // Obter todas as contas a receber
+            var contasAReceber = _contasAReceberRepository.GetAll();
 
-            contasAReceber = SortProdutos(contasAReceber, sidx, sord); // Ordenar conforme necessário
+            contasAReceber = SortProdutos(contasAReceber, sidx, sord);
 
             var totalRecords = contasAReceber.Count();
             var totalPages = (int)Math.Ceiling((double)totalRecords / rows);

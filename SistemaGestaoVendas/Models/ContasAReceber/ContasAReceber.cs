@@ -20,5 +20,6 @@ namespace SistemaGestaoVendas.Models.ContasAReceberrs
         public decimal JurosMulta { get; set; }
         public decimal Desconto { get; set; }
         public string CodigoBarra { get; set; }
+        public string Success { get; set; }
     }
 }

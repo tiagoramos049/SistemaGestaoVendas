@@ -61,93 +61,99 @@
                     <div class="card-body">
                     <form asp-action="Index">
                         <div class="container">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="DataEmissao">Data de Emissão</label>
-                                        <input type="text" class="form-control" name="DataEmissao" placeholder="DataEmissao">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="DataEmissao">Data de Emissão</label>
+                                            <input type="text" class="form-control" name="DataEmissao" placeholder="DataEmissao">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="DataVencimento">Data de Vencimento</label>
+                                            <input type="text" class="form-control" name="DataVencimento" placeholder="DataVencimento">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="Favorecido">Favorecido</label>
+                                            <input type="text" class="form-control" name="Favorecido" placeholder="Favorecido">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="Valor">Valor</label>
+                                            <input type="text" class="form-control" name="Valor" placeholder="Valor">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="DataVencimento">Data de Vencimento</label>
-                                        <input type="text" class="form-control" name="DataVencimento" placeholder="DataVencimento">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="FormaPagamento">Forma de Pagamento</label>
+                                            <input type="text" class="form-control" name="Forma de Pagamento" placeholder="FormaPagamento">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="Banco">Banco</label>
+                                            <input type="text" class="form-control" name="Banco" placeholder="Banco">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="CentroDeCusto">Centro De Custo</label>
+                                            <input type="text" class="form-control" name="Centro de Custo" placeholder="CentroDeCusto">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="Categoria">Categoria</label>
+                                            <input type="text" class="form-control" name="Categoria" placeholder="Categoria">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="Favorecido">Favorecido</label>
-                                        <input type="text" class="form-control" name="Favorecido" placeholder="Favorecido">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="Projeto">Projeto</label>
+                                            <input type="text" class="form-control" name="Projeto" placeholder="Projeto">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="NumeroNotaFiscal">Nota Fiscal</label>
+                                            <input type="text" class="form-control" name="NumeroNotaFiscal" placeholder="NumeroNotaFiscal">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="ValorPagoNotaFiscal">Valor Pago Nota Fiscal</label>
+                                            <input type="text" class="form-control" name="ValorPagoNotaFiscal" placeholder="ValorPagoNotaFiscal">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="JurosMulta">Juros Multa</label>
+                                            <input type="text" class="form-control" name="Juros Multa" placeholder="JurosMulta">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="Valor">Valor</label>
-                                        <input type="text" class="form-control" name="Valor" placeholder="Valor">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="Desconto">Desconto</label>
+                                            <input type="text" class="form-control" name="Desconto" placeholder="Desconto">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="CodigoBarra">Código de Barra</label>
+                                            <input type="text" class="form-control" name="CodigoBarra" placeholder="CodigoBarra">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="FormaPagamento">Forma de Pagamento</label>
-                                        <input type="text" class="form-control" name="Forma de Pagamento" placeholder="FormaPagamento">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="Banco">Banco</label>
-                                        <input type="text" class="form-control" name="Banco" placeholder="Banco">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="CentroDeCusto">Centro De Custo</label>
-                                        <input type="text" class="form-control" name="Centro de Custo" placeholder="CentroDeCusto">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="Categoria">Categoria</label>
-                                        <input type="text" class="form-control" name="Categoria" placeholder="Categoria">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="Projeto">Projeto</label>
-                                        <input type="text" class="form-control" name="Projeto" placeholder="Projeto">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="NumeroNotaFiscal">Nota Fiscal</label>
-                                        <input type="text" class="form-control" name="NumeroNotaFiscal" placeholder="NumeroNotaFiscal">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="ValorPagoNotaFiscal">Valor Pago Nota Fiscal</label>
-                                        <input type="text" class="form-control" name="ValorPagoNotaFiscal" placeholder="ValorPagoNotaFiscal">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="JurosMulta">Juros Multa</label>
-                                        <input type="text" class="form-control" name="Juros Multa" placeholder="JurosMulta">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="Desconto">Desconto</label>
-                                        <input type="text" class="form-control" name="Desconto" placeholder="Desconto">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="CodigoBarra">Código de Barra</label>
-                                        <input type="text" class="form-control" name="CodigoBarra" placeholder="CodigoBarra">
-                                    </div>
-                                </div>
-                            </div>
-                            <br />
+                                <br />
                                 <div class="modal-footer">
                                     <div class="col-md-12">
                                         <button type="submit" class="btn btn-primary">Salvar</button>

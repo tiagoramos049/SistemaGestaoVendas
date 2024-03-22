@@ -39,14 +39,11 @@ namespace SistemaGestaoVendas.Controllers
         {
             var clientes = _clienteRepository.GetAll();
 
-            // Lógica para ordenação
             clientes = SortProdutos(clientes, sidx, sord);
 
-            // Lógica para paginação
             var totalRecords = clientes.Count();
             var totalPages = (int)Math.Ceiling((double)totalRecords / rows);
 
-            // Aplica a paginação
             clientes = clientes.Skip((page - 1) * rows).Take(rows);
 
             var jsonData = clientes.Select(p => new
@@ -69,13 +66,11 @@ namespace SistemaGestaoVendas.Controllers
 
         private IEnumerable<Cliente> SortProdutos(IEnumerable<Cliente> clientes, string sortBy, string sortOrder)
         {
-            // Lógica para ordenação
             switch (sortBy)
             {
                 case "nome":
                     clientes = sortOrder == "asc" ? clientes.OrderBy(p => p.Nome) : clientes.OrderByDescending(p => p.Nome);
                     break;
-                    // Adicione mais casos conforme necessário para outras colunas
             }
 
             return clientes;
@@ -143,7 +138,7 @@ namespace SistemaGestaoVendas.Controllers
             {
                 _clienteRepository.Delete(id);
 
-                return RedirectToAction("Index"); // Substitua "Index" pela sua ação desejada
+                return RedirectToAction("Index");
             }
             catch (Exception ex)
             {
