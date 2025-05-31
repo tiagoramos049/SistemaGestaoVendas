@@ -1,0 +1,276 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+
+
+body::before {
+    content: "";
+    background-image: url('/fotos/Canva.jpg');
+    background-size: 500px; /* Isso ajustará a imagem para cobrir toda a tela */
+    background-repeat: no-repeat;
+    background-position: center center; /* Isso centralizará a imagem na tela */
+    background-attachment: fixed; /* Isso fixará a imagem no fundo, evitando rolar com a página */
+    opacity: 0.3; /* Ajuste a opacidade conforme necessário */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2; /* Coloca a imagem atrás do conteúdo */
+    pointer-events: none; /* Para garantir que a pseudo-elemento não interfira em outros elementos */
+}
+
+
+span.icon-edit,
+span.icon-delete {
+    font-size: 20px; /* Adjust the size as needed */
+    margin-right: 5px; /* Add some spacing between icons if needed */
+}
+
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+
+.h-custom {
+    height: calc(100% - 73px);
+}
+
+.icon-verde {
+    color: green; /* Defina a cor verde desejada */
+}
+
+.icon-borda {
+    color: red;
+    border: 5px;
+}
+
+.disabled-icon {
+    color: #999; /* Defina a cor desejada para os ícones desativados */
+}
+
+@media (max-width: 450px) {
+    .h-custom {
+        height: 100%;
+    }
+}
+
+.flex-container {
+            display: flex;
+            gap: 20px; /* Espaçamento entre os elementos */
+            justify-content: center; /* Alinhamento centralizado dos elementos */
+}
+.black-bg, .black-bgf {
+    background-color: #161618;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1; /* Faz com que ambos os elementos cresçam igualmente para preencher o contêiner */
+}
+.black-bg h3, .black-bgf h3 {
+    margin-top: 0;
+}
+.container, .content-wrapper {
+    margin-bottom: 20px;
+}
+
+.circle-border {
+    width: 75px;
+    height: 75px;
+    border: 4px solid #fbd858;
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.circle-border1 {
+    width: 75px;
+    height: 75px;
+    border: 4px solid #3a3a3c;
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.black-bg {
+    background-color: #161618;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container-line {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+.dotted-line {
+    position: absolute;
+    left: 48px; /* Alinha a linha pontilhada com o centro dos círculos */
+    top: 75px; /* Ajusta conforme necessário para alinhar a linha pontilhada verticalmente */
+    width: 2px;
+    height: 50px; /* Ajuste conforme a distância entre seus containers */
+    background-color: #fff;
+    background-image: linear-gradient(to bottom, #fff 50%, rgba(255, 255, 255, 0) 0%);
+    background-size: 2px 10px;
+}
+
+.black-bgf {
+    background-color: #212121;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaçamento entre as caixas */
+    justify-content: space-between;
+}
+
+.content-container {
+    position: relative;
+    width: 100%; /* Define a largura de cada content-box */
+    margin-bottom: 20px;
+}
+
+.content-box {
+    border: 2px solid #6c757d;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.content-box1 {
+    border: 2px solid #6c757d;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.content-box::after {
+    content: '>';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    color: #fff;
+}
+
+
+
+.recommended {
+    position: absolute;
+    top: -20px;
+    right: 10px;
+    background-color: #05954d;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.content-box.warning {
+    border-color: #ffc107;
+    color: #ffc107;
+}
+
+.content-box h4 {
+    margin: 10px 0;
+}
+
+.btn-outline-warning {
+    border-color: #ffc107;
+    color: #ffc107;
+    background-color: transparent;
+}
+
+    .btn-outline-warning:hover {
+        background-color: #ffc107;
+        color: #000;
+    }
+
+h2, h3, h4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 15px;
+}
+
+button.btn-outline-secondary {
+    border-color: #ffc107;
+    color: #ffc107;
+    background-color: transparent;
+}
+
+button.btn-outline-secondary:hover {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.brave-box {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ffdf00;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+#corFundo {
+    background-color: #c1c1c1;
+}

@@ -1,0 +1,95 @@
+﻿@model SistemaGestaoVendas.Models.Checklist.CheckList
+@{
+    ViewBag.Title = "Checklist";
+}
+
+<h2>Checklist</h2>
+
+<form asp-action="Index" method="post">
+    <input type="hidden" name="IdMotos" value="@Model.IdMotos" />
+    <div class="form-group">
+        <label>
+            <input type="checkbox" asp-for="ChecarDebitos" />
+            Checar Débitos
+        </label>
+    </div>
+    <div class="form-group">
+        <label>
+            <input type="checkbox" asp-for="ChecarAlinhamento" />
+            Checar Alinhamento
+        </label>
+    </div>
+    <div class="form-group">
+        <label>
+            <input type="checkbox" asp-for="ChecarCarenagem" />
+            Checar Carenagem
+        </label>
+    </div>
+    <div class="form-group">
+        <label>
+            <input type="checkbox" asp-for="ChecarRodasPneus" />
+            Checar Rodas e Pneus
+        </label>
+    </div>
+    <div class="form-group">
+        <label>
+            <input type="checkbox" asp-for="ChecarVazamentos" />
+            Checar Vazamentos de Óleo
+        </label>
+    </div>
+    <div class="form-group">
+        <label>
+            <input type="checkbox" asp-for="ChecarManualChave" />
+            Checar Manual e Chave
+        </label>
+    </div>
+    <div class="form-group">
+        <label>
+            <input type="checkbox" asp-for="ChecarPainel" />
+            Checar Painel
+        </label>
+    </div>
+    <div class="form-group">
+        <label>
+            <input type="checkbox" asp-for="ChecarEletrica" />
+            Checar Elétrica
+        </label>
+    </div>
+    <div class="form-group">
+        <label>
+            <input type="checkbox" asp-for="ChecarEmbreagem" />
+            Checar Embreagem
+        </label>
+    </div>
+    <div class="form-group">
+        <label>
+            <input type="checkbox" asp-for="ChecarCaixaDirecao" />
+            Checar Caixa de Direção
+        </label>
+    </div>
+    <div class="form-group">
+        <label>
+            <input type="checkbox" asp-for="ChecarMotor" />
+            Checar Motor
+        </label>
+    </div>
+    <div class="form-group">
+        <label>
+            <input type="checkbox" asp-for="ChecarFumacaDoMotor" />
+            Checar Fumaça do Motor
+        </label>
+    </div>
+    <div class="form-group">
+        <label>
+            <input type="checkbox" asp-for="ChecarRolamentoDisco" />
+            Checar Rolamento de Disco
+        </label>
+    </div>
+    <div class="form-group">
+        <label>
+            <input type="checkbox" asp-for="ChecarChassi" />
+            Checar Chassi
+        </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Salvar Checklist</button>
+</form>

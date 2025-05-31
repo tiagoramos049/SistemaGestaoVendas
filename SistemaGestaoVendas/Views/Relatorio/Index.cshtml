@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Relatório de Vendas</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .chart-container {
+            max-width: 300px; /* Defina o tamanho máximo do container do gráfico */
+            margin: 20px auto; /* Centralize o container do gráfico */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4">Relatório de Vendas</h1>
+
+        <!-- Primeiro Gráfico -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="chart-container">
+                    <canvas id="margemLucroChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Segundo Gráfico -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="chart-container">
+                    <canvas id="dadosTotaisChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2>Estoque Atual</h2>
+    <table class="table table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>Nome</th>
+                <th>Placa</th>
+                <th>Valor de Compra</th>
+                <th>Valor de Venda</th>
+                <th>Margem de Lucro</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var moto in Model.Estoque)
+            {
+                <tr>
+                    <td>@moto.Nome</td>
+                    <td>@moto.Placa</td>
+                    <td>R$ @moto.ValorCompra.ToString("N2", new System.Globalization.CultureInfo("pt-BR"))</td>
+                    <td>R$ @moto.ValorVenda.ToString("N2", new System.Globalization.CultureInfo("pt-BR"))</td>
+                    <td>R$ @((moto.ValorVenda - moto.ValorCompra).ToString("N2", new System.Globalization.CultureInfo("pt-BR")))</td>
+                </tr>
+            }
+
+            <tr>
+                <td colspan="4" class="text-right"><strong>Total da Margem de Lucro:</strong></td>
+                <td><strong>R$ @Model.TotalMargemLucro.ToString("N2", new System.Globalization.CultureInfo("pt-BR"))</strong></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Histórico de Vendas</h2>
+    <table class="table table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>Nome Moto</th>
+                <th>Nome Cliente</th>
+                <th>Data da Venda</th>
+                <th>Valor Venda</th>
+                <th>Valor Total Vendas</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var venda in Model.HistoricoVendas)
+            {
+                <tr>
+                    <td>@venda.Nome</td>
+                    <td>@venda.NomeCliente</td>
+                    <td>@venda.DataVenda.ToString("dd/MM/yyyy HH:mm")</td>
+                    <td>@venda.ValorVenda.ToString("N2", new System.Globalization.CultureInfo("pt-BR"))</td>
+                </tr>
+            }
+            <tr>
+                <td colspan="4" class="text-right"><strong>Total de Vendas:</strong></td>
+                <td><strong>R$ @Model.ValorTotalVendas.ToString("N2", new System.Globalization.CultureInfo("pt-BR"))</strong></td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var ctx1 = document.getElementById('margemLucroChart').getContext('2d');
+            var ctx2 = document.getElementById('dadosTotaisChart').getContext('2d');
+
+            var labels1 = [];
+            var data1 = [];
+            var backgroundColors1 = [];
+
+            // Lógica para preencher os dados do primeiro gráfico (Margem de Lucro)
+        @foreach (var moto in Model.Estoque)
+        {
+            @:labels1.push("@moto.Nome");
+            @:data1.push(@(moto.ValorVenda - moto.ValorCompra));
+            @:backgroundColors1.push('rgba(' + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ', 0.2)');
+        }
+
+                    var chartData1 = {
+                labels: labels1,
+                datasets: [{
+                    label: 'Margem de Lucro',
+                    data: data1,
+                    backgroundColor: backgroundColors1,
+                    borderColor: backgroundColors1.map(color => color.replace('0.2', '1')),
+                    borderWidth: 1
+                }]
+            };
+
+            // Opções do primeiro gráfico
+            var options1 = {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function (tooltipItem) {
+                                return ' R$ ' + tooltipItem.raw;
+                            }
+                        }
+                    }
+                }
+            };
+
+            new Chart(ctx1, {
+                type: 'pie',
+                data: chartData1,
+                options: options1
+            });
+
+            var labels2 = ['Total de Motos', 'Total Valor de Compra', 'Total Valor de Venda', 'Total Margem de Lucro'];
+            var data2 = [@Model.TotalMotos, @Model.TotalValorCompra, @Model.TotalValorVenda, @Model.TotalMargemLucro];
+            var backgroundColors2 = ['rgba(255, 99, 132, 0.2)', 'rgba(54, 162, 235, 0.2)', 'rgba(255, 206, 86, 0.2)', 'rgba(75, 192, 192, 0.2)','rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)', 'rgba(75, 192, 192, 1)'];
+            var borderColor2 = [];
+
+            var chartData2 = {
+                labels: labels2,
+                datasets: [{
+                    label: 'Dados Totais',
+                    data: data2,
+                    backgroundColor: backgroundColors2,
+                    borderColor: borderColor2,
+                    borderWidth: 1
+                }]
+            };
+
+            // Opções do segundo gráfico
+            var options2 = {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function (tooltipItem) {
+                                return ' R$ ' + tooltipItem.raw;
+                            }
+                        }
+                    }
+                }
+            };
+
+            new Chart(ctx2, {
+                type: 'pie',
+                data: chartData2,
+                options: options2
+            });
+        });
+    </script>
+</body>
+</html>

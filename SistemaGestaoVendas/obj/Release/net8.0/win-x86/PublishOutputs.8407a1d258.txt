@@ -1,0 +1,14 @@
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Release\net8.0\win-x86\PubTmp\Out\SistemaGestaoVendas.exe
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Release\net8.0\win-x86\PubTmp\Out\web.config
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Release\net8.0\win-x86\PubTmp\Out\appsettings.Development.json
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Release\net8.0\win-x86\PubTmp\Out\appsettings.json
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Release\net8.0\win-x86\PubTmp\Out\libman.json
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Release\net8.0\win-x86\PubTmp\Out\SistemaGestaoVendas.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Release\net8.0\win-x86\PubTmp\Out\SistemaGestaoVendas.deps.json
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Release\net8.0\win-x86\PubTmp\Out\SistemaGestaoVendas.runtimeconfig.json
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Release\net8.0\win-x86\PubTmp\Out\SistemaGestaoVendas.pdb
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Release\net8.0\win-x86\PubTmp\Out\AutoMapper.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Release\net8.0\win-x86\PubTmp\Out\Dapper.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Release\net8.0\win-x86\PubTmp\Out\Newtonsoft.Json.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Release\net8.0\win-x86\PubTmp\Out\System.Data.SqlClient.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Release\net8.0\win-x86\PubTmp\Out\sni.dll

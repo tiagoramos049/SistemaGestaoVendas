@@ -1,0 +1,51 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-image: url('/fotos/sistemagestao.jpg');
+    background-size: cover; /* Isso ajustará a imagem para cobrir toda a tela */
+    background-position: center center; /* Isso centralizará a imagem na tela */
+    background-attachment: fixed; /* Isso fixará a imagem no fundo, evitando rolar com a página */
+}
+
+
+span.icon-edit,
+span.icon-delete {
+    font-size: 20px; /* Adjust the size as needed */
+    margin-right: 5px; /* Add some spacing between icons if needed */
+}
+
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+
+.h-custom {
+    height: calc(100% - 73px);
+}
+
+@media (max-width: 450px) {
+    .h-custom {
+        height: 100%;
+    }
+}

@@ -1,0 +1,88 @@
+﻿<div class="modal" id="editarModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Editar Registro</h5>
+            </div>
+            <div class="modal-body">
+                <form id="formularioEdicao">
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" name="nome">
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefone" class="form-label">Telefone</label>
+                        <textarea class="form-control" id="telefone" name="telefone"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="cpfCnpj" class="form-label">Cpf/Cnpj</label>
+                        <textarea class="form-control" id="cpfCnpj" name="cpfCnpj"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="observacoes" class="form-label">Observações</label>
+                        <textarea class="form-control" id="observacoes" name="observacoes"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" onclick="fecharModal()">Fechar</button>
+                <button type="button" class="btn btn-primary" onclick="salvarEdicao()">Salvar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="mensagem"></div>
+
+<form asp-action="Index">
+    <div class="container">
+        <div class="row">
+            <span>Cadastrar Novo Cliente</span>
+            <hr />
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form-control" name="nome" placeholder="nome">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="text" class="form-control" name="telefone" placeholder="telefone">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="cpfCnpj">Cpf/Cnpj</label>
+                    <input type="text" class="form-control" name="cpfCnpj" placeholder="cpfCnpj">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="observacoes">Observaçõoes</label>
+                    <input type="text" class="form-control" name="observacoes" placeholder="observacoes">
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-12">
+                <button type="submit" class="btn btn-primary">Salvar</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<br />
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <table id="jqGridCliente"></table>
+            <div id="jqGridPager"></div>
+        </div>
+    </div>
+</div>
+
+@section clienterender {
+    <script src="~/js/cliente.js"></script>
+}

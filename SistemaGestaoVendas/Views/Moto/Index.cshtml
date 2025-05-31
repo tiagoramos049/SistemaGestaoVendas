@@ -1,0 +1,200 @@
+﻿<div class="modal" id="editarModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Editar Registro</h5>
+            </div>
+            <div class="modal-body">
+                <form id="formularioEdicao">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label for="nome" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="nome" name="nome">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="placa" class="form-label">Placa</label>
+                                <textarea class="form-control" id="placa" name="placa"></textarea>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="marca" class="form-label">Marca</label>
+                                <textarea class="form-control" id="marca" name="marca"></textarea>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="fabricacao" class="form-label">Fabricacao</label>
+                                <textarea class="form-control" id="fabricacao" name="fabricacao"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label for="crv" class="form-label">Crv</label>
+                                <textarea class="form-control" id="crv" name="crv"></textarea>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="cor" class="form-label">Cor</label>
+                                <textarea class="form-control" id="cor" name="cor"></textarea>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="chassi" class="form-label">Chassi</label>
+                                <textarea class="form-control" id="chassi" name="chassi"></textarea>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="cilindrada" class="form-label">Cilindrada</label>
+                                <textarea class="form-control" id="cilindrada" name="cilindrada"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="valorVenda">Valor Venda</label>
+                                    <input type="text" class="form-control" id="valorVenda" name="valorVenda" placeholder="Valor Venda">
+                                </div>
+                            </div>
+
+                            
+                            <div class="col-md-3">
+                                <label for="valorCompra" class="form-label">ValorCompra</label>
+                                <textarea class="form-control" id="valorCompra" name="valorCompra"></textarea>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="dataCompra" class="form-label">DataCompra</label>
+                                <textarea class="form-control" id="dataCompra" name="dataCompra"></textarea>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="observacoes" class="form-label">Observacoes</label>
+                                <textarea class="form-control" id="observacoes" name="observacoes"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label for="regiao" class="form-label">Regiao</label>
+                                <textarea class="form-control" id="regiao" name="regiao"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" onclick="fecharModal()">Fechar</button>
+                <button type="button" class="btn btn-primary" onclick="salvarEdicao()">Salvar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="mensagem"></div>
+
+<form id="motoForm" action="/Moto/Insert" method="post">
+    <div class="container">
+        <div class="row">
+            <span>Cadastrar Nova Moto</span>
+            <hr />
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form-control" name="nome" placeholder="nome">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="placa">Placa</label>
+                    <input type="text" class="form-control" name="placa" placeholder="placa">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="marca">Marca</label>
+                    <input type="text" class="form-control" name="marca" placeholder="marca">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="fabricacao">Fabricacao</label>
+                    <input type="date" class="form-control" name="fabricacao" placeholder="fabricacao">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="crv">Crv</label>
+                    <input type="text" class="form-control" name="crv" placeholder="crv">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="cor">Cor</label>
+                    <input type="text" class="form-control" name="cor" placeholder="cor">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="chassi">Chassi</label>
+                    <input type="text" class="form-control" name="chassi" placeholder="chassi">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="cilindrada">Cilindrada</label>
+                    <input type="text" class="form-control" name="cilindrada" placeholder="cilindrada">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="valorVenda">Valor Venda</label>
+                    <input type="text" class="form-control" name="valorVenda" placeholder="valorVenda">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="valorCompra">Valor Compra</label>
+                    <input type="text" class="form-control" name="valorCompra" placeholder="valorCompra">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="dataCompra">Data Compra</label>
+                    <input type="date" class="form-control" name="dataCompra" placeholder="dataCompra">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="regiao">Região</label>
+                    <input type="text" class="form-control" name="regiao" placeholder="regiao">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="observacoes">Observacoes</label>
+                    <input type="text" class="form-control" name="observacoes" placeholder="observacoes">
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-12">
+                <button type="submit" class="btn btn-primary">Salvar</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<br />
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <table id="jqGridVendedor"></table>
+            <div id="jqGridPager"></div>
+        </div>
+    </div>
+</div>
+
+@section motorender {
+    <script src="~/js/moto.js"></script>
+}

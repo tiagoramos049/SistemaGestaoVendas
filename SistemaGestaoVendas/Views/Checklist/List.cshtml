@@ -1,0 +1,84 @@
+﻿@using SistemaGestaoVendas.Models.Checklist
+@model IEnumerable<CheckList>
+
+@{
+    ViewBag.Title = "Lista de Checklists";
+}
+
+<h2>Lista de Checklists</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nome da Moto</th>
+            <th>Vendida?</th>
+            <th>Checar Débitos</th>
+            <th>Checar Alinhamento</th>
+            <th>Checar Carenagem</th>
+            <th>Checar Rodas e Pneus</th>
+            <th>Checar Vazamentos</th>
+            <th>Checar Manual e Chave</th>
+            <th>Checar Painel</th>
+            <th>Checar Elétrica</th>
+            <th>Checar Embreagem</th>
+            <th>Checar Caixa de Direção</th>
+            <th>Checar Motor</th>
+            <th>Checar Fumaça do Motor</th>
+            <th>Checar Rolamento de Disco</th>
+            <th>Checar Chassi</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var checklist in Model)
+        {
+            <tr>
+                <td>@checklist.NomeMoto</td>
+                <td class="@(checklist.QuantidadeEstoque)">
+                    @(checklist.QuantidadeEstoque)
+                </td>
+                <td class="@(checklist.ChecarDebitos ? "text-success" : "text-danger")">
+                    @(checklist.ChecarDebitos ? "Sim" : "Não")
+                </td>
+                <td class="@(checklist.ChecarAlinhamento ? "text-success" : "text-danger")">
+                    @(checklist.ChecarAlinhamento ? "Sim" : "Não")
+                </td>
+                <td class="@(checklist.ChecarCarenagem ? "text-success" : "text-danger")">
+                    @(checklist.ChecarCarenagem ? "Sim" : "Não")
+                </td>
+                <td class="@(checklist.ChecarRodasPneus ? "text-success" : "text-danger")">
+                    @(checklist.ChecarRodasPneus ? "Sim" : "Não")
+                </td>
+                <td class="@(checklist.ChecarVazamentos ? "text-success" : "text-danger")">
+                    @(checklist.ChecarVazamentos ? "Sim" : "Não")
+                </td>
+                <td class="@(checklist.ChecarManualChave ? "text-success" : "text-danger")">
+                    @(checklist.ChecarManualChave ? "Sim" : "Não")
+                </td>
+                <td class="@(checklist.ChecarPainel ? "text-success" : "text-danger")">
+                    @(checklist.ChecarPainel ? "Sim" : "Não")
+                </td>
+                <td class="@(checklist.ChecarEletrica ? "text-success" : "text-danger")">
+                    @(checklist.ChecarEletrica ? "Sim" : "Não")
+                </td>
+                <td class="@(checklist.ChecarEmbreagem ? "text-success" : "text-danger")">
+                    @(checklist.ChecarEmbreagem ? "Sim" : "Não")
+                </td>
+                <td class="@(checklist.ChecarCaixaDirecao ? "text-success" : "text-danger")">
+                    @(checklist.ChecarCaixaDirecao ? "Sim" : "Não")
+                </td>
+                <td class="@(checklist.ChecarMotor ? "text-success" : "text-danger")">
+                    @(checklist.ChecarMotor ? "Sim" : "Não")
+                </td>
+                <td class="@(checklist.ChecarFumacaDoMotor ? "text-success" : "text-danger")">
+                    @(checklist.ChecarFumacaDoMotor ? "Sim" : "Não")
+                </td>
+                <td class="@(checklist.ChecarRolamentoDisco ? "text-success" : "text-danger")">
+                    @(checklist.ChecarRolamentoDisco ? "Sim" : "Não")
+                </td>
+                <td class="@(checklist.ChecarChassi ? "text-success" : "text-danger")">
+                    @(checklist.ChecarChassi ? "Sim" : "Não")
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

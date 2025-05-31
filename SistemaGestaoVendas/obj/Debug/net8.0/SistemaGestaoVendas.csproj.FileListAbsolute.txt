@@ -1,0 +1,369 @@
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\web.config
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\appsettings.json
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\libman.json
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.staticwebassets.runtime.json
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.exe
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.deps.json
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.runtimeconfig.json
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.pdb
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\Common.Logging.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\Common.Logging.Core.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\Dapper.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\itext.barcodes.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\itext.forms.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\itext.io.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\itext.kernel.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\itext.layout.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\itext.pdfa.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\itext.sign.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\itext.styledxmlparser.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\itext.svg.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\OFXParser.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\OFXSharp.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\BouncyCastle.Crypto.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\SgmlReaderDll.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.csproj.AssemblyReference.cache
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.AssemblyInfoInputs.cache
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.AssemblyInfo.cs
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.csproj.CoreCompileInputs.cache
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.RazorAssemblyInfo.cache
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.RazorAssemblyInfo.cs
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.sourcelink.json
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets\msbuild.SistemaGestaoVendas.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets\msbuild.build.SistemaGestaoVendas.props
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SistemaGestaoVendas.props
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SistemaGestaoVendas.props
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\scopedcss\bundle\SistemaGestaoVendas.styles.css
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\scopedcss\projectbundle\SistemaGestaoVendas.bundle.scp.css
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.csproj.CopyComplete
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\refint\SistemaGestaoVendas.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.pdb
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.genruntimeconfig.cache
+C:\Users\SQi\source\repos\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\ref\SistemaGestaoVendas.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.csproj.AssemblyReference.cache
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.AssemblyInfoInputs.cache
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.AssemblyInfo.cs
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.csproj.CoreCompileInputs.cache
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.RazorAssemblyInfo.cache
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.RazorAssemblyInfo.cs
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.sourcelink.json
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\refint\SistemaGestaoVendas.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.pdb
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\web.config
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\libman.json
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\appsettings.json
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.staticwebassets.runtime.json
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.exe
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.deps.json
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.runtimeconfig.json
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.pdb
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\Common.Logging.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\Common.Logging.Core.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\Dapper.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\itext.barcodes.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\itext.forms.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\itext.io.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\itext.kernel.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\itext.layout.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\itext.pdfa.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\itext.sign.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\itext.styledxmlparser.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\itext.svg.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\OFXParser.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\OFXSharp.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\BouncyCastle.Crypto.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\SgmlReaderDll.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets\msbuild.SistemaGestaoVendas.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets\msbuild.build.SistemaGestaoVendas.props
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SistemaGestaoVendas.props
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SistemaGestaoVendas.props
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\scopedcss\bundle\SistemaGestaoVendas.styles.css
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\scopedcss\projectbundle\SistemaGestaoVendas.bundle.scp.css
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.csproj.CopyComplete
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.genruntimeconfig.cache
+C:\Users\SQi\Desktop\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\ref\SistemaGestaoVendas.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.csproj.AssemblyReference.cache
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.AssemblyInfoInputs.cache
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.AssemblyInfo.cs
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.csproj.CoreCompileInputs.cache
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.RazorAssemblyInfo.cache
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.RazorAssemblyInfo.cs
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.sourcelink.json
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\refint\SistemaGestaoVendas.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.pdb
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\web.config
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\appsettings.json
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\libman.json
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.staticwebassets.runtime.json
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.exe
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.deps.json
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.runtimeconfig.json
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.pdb
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\Common.Logging.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\Common.Logging.Core.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\Dapper.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\itext.barcodes.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\itext.forms.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\itext.io.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\itext.kernel.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\itext.layout.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\itext.pdfa.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\itext.sign.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\itext.styledxmlparser.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\itext.svg.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\OFXParser.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\OFXSharp.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\BouncyCastle.Crypto.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\SgmlReaderDll.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets\msbuild.SistemaGestaoVendas.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets\msbuild.build.SistemaGestaoVendas.props
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SistemaGestaoVendas.props
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SistemaGestaoVendas.props
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\scopedcss\bundle\SistemaGestaoVendas.styles.css
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\scopedcss\projectbundle\SistemaGestaoVendas.bundle.scp.css
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaG.74FD577A.Up2Date
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.genruntimeconfig.cache
+C:\Users\gabri\OneDrive\Área de Trabalho\SistemaGestaoVendas\SistemaGestaoVendas\obj\Debug\net8.0\ref\SistemaGestaoVendas.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\web.config
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\appsettings.json
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\libman.json
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.staticwebassets.runtime.json
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.exe
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.deps.json
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.runtimeconfig.json
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.pdb
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\Common.Logging.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\Common.Logging.Core.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\Dapper.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\itext.barcodes.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\itext.forms.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\itext.io.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\itext.kernel.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\itext.layout.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\itext.pdfa.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\itext.sign.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\itext.styledxmlparser.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\itext.svg.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\OFXParser.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\OFXSharp.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\BouncyCastle.Crypto.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\SgmlReaderDll.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.csproj.AssemblyReference.cache
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.AssemblyInfoInputs.cache
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.AssemblyInfo.cs
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.csproj.CoreCompileInputs.cache
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.RazorAssemblyInfo.cache
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.RazorAssemblyInfo.cs
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.sourcelink.json
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets\msbuild.SistemaGestaoVendas.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets\msbuild.build.SistemaGestaoVendas.props
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SistemaGestaoVendas.props
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SistemaGestaoVendas.props
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\scopedcss\bundle\SistemaGestaoVendas.styles.css
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\scopedcss\projectbundle\SistemaGestaoVendas.bundle.scp.css
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.csproj.CopyComplete
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\refint\SistemaGestaoVendas.dll
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.pdb
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.genruntimeconfig.cache
+C:\Users\SQi\source\repos\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\ref\SistemaGestaoVendas.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\web.config
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\appsettings.json
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\libman.json
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.staticwebassets.runtime.json
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.exe
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.deps.json
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.runtimeconfig.json
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.pdb
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\Common.Logging.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\Common.Logging.Core.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\Dapper.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\itext.barcodes.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\itext.forms.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\itext.io.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\itext.kernel.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\itext.layout.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\itext.pdfa.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\itext.sign.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\itext.styledxmlparser.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\itext.svg.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\OFXParser.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\OFXSharp.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\BouncyCastle.Crypto.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\SgmlReaderDll.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.csproj.AssemblyReference.cache
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.AssemblyInfoInputs.cache
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.AssemblyInfo.cs
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.csproj.CoreCompileInputs.cache
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.RazorAssemblyInfo.cache
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.RazorAssemblyInfo.cs
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.sourcelink.json
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\scopedcss\bundle\SistemaGestaoVendas.styles.css
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\scopedcss\projectbundle\SistemaGestaoVendas.bundle.scp.css
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\refint\SistemaGestaoVendas.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.pdb
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.genruntimeconfig.cache
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\ref\SistemaGestaoVendas.dll
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\web.config
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\appsettings.Development.json
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\appsettings.json
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\libman.json
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.staticwebassets.runtime.json
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.staticwebassets.endpoints.json
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.exe
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.deps.json
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.runtimeconfig.json
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.dll
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.pdb
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\AutoMapper.dll
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\Common.Logging.dll
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\Common.Logging.Core.dll
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\Dapper.dll
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\itext.barcodes.dll
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\itext.forms.dll
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\itext.io.dll
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\itext.kernel.dll
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\itext.layout.dll
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\itext.pdfa.dll
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\itext.sign.dll
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\itext.styledxmlparser.dll
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\itext.svg.dll
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\OFXParser.dll
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\OFXSharp.dll
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\BouncyCastle.Crypto.dll
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\SgmlReaderDll.dll
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\System.Data.SqlClient.dll
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.csproj.AssemblyReference.cache
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.GeneratedMSBuildEditorConfig.editorconfig
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.AssemblyInfoInputs.cache
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.AssemblyInfo.cs
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.csproj.CoreCompileInputs.cache
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.MvcApplicationPartsAssemblyInfo.cache
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.RazorAssemblyInfo.cache
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.RazorAssemblyInfo.cs
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.sourcelink.json
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\scopedcss\bundle\SistemaGestaoVendas.styles.css
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\scopedcss\projectbundle\SistemaGestaoVendas.bundle.scp.css
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets.build.json
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets.development.json
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets\msbuild.SistemaGestaoVendas.Microsoft.AspNetCore.StaticWebAssets.props
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets\msbuild.SistemaGestaoVendas.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets\msbuild.build.SistemaGestaoVendas.props
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SistemaGestaoVendas.props
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SistemaGestaoVendas.props
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets.pack.json
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaG.74FD577A.Up2Date
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.dll
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\refint\SistemaGestaoVendas.dll
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.pdb
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaGestaoVendas.genruntimeconfig.cache
+D:\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\ref\SistemaGestaoVendas.dll
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\bin\Debug\net8.0\SistemaGestaoVendas.staticwebassets.endpoints.json
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\SQi\Desktop\SistemaGestaoVendasMotos\SistemaGestaoVendas\obj\Debug\net8.0\SistemaG.74FD577A.Up2Date
